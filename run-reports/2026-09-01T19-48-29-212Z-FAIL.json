@@ -1,0 +1,82 @@
+{
+  "startedAt": "2026-09-01T19:48:29.212Z",
+  "gatesPassed": false,
+  "promptVersion": "1.0.0",
+  "model": "claude-sonnet-5",
+  "durationMs": 43,
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0
+  },
+  "searches": 0,
+  "clusters": [
+    {
+      "id": "A",
+      "status": "ok",
+      "items": 23,
+      "searches": 0,
+      "attempts": 1,
+      "note": "from fixture golden-current.json"
+    },
+    {
+      "id": "B",
+      "status": "ok",
+      "items": 16,
+      "searches": 0,
+      "attempts": 1,
+      "note": "from fixture golden-current.json"
+    },
+    {
+      "id": "C",
+      "status": "ok",
+      "items": 14,
+      "searches": 0,
+      "attempts": 1,
+      "note": "from fixture golden-current.json"
+    },
+    {
+      "id": "D",
+      "status": "ok",
+      "items": 19,
+      "searches": 0,
+      "attempts": 1,
+      "note": "from fixture golden-current.json"
+    },
+    {
+      "id": "E",
+      "status": "ok",
+      "items": 13,
+      "searches": 0,
+      "attempts": 1,
+      "note": "from fixture golden-current.json"
+    }
+  ],
+  "checks": [
+    {
+      "id": "REQ-GATE-1",
+      "status": "pass",
+      "detail": "edition valid against schemaVersion 1"
+    },
+    {
+      "id": "REQ-GATE-3",
+      "status": "pass",
+      "detail": "0 of 85 urls on deny list; 47 distinct hosts checked"
+    },
+    {
+      "id": "REQ-GATE-4",
+      "status": "pass",
+      "detail": "12/12 topics at or above minItems"
+    },
+    {
+      "id": "REQ-GATE-5",
+      "status": "pass",
+      "detail": "85 unique canonical urls, 85 unique ids"
+    },
+    {
+      "id": "REQ-GATE-6",
+      "status": "fail",
+      "detail": "0.00 of non-Utah items inside window (floor 0.80, window 24h resolved to 1d, cutoff 2026-08-31)"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+# Prompt manifest -- WIRE-SPEC-A1 A1-015.
+#
+# THIS FILE IS THE SINGLE POINT OF MODEL SELECTION. wire.config.yaml's
+# `model:` block retains CALL PARAMETERS ONLY (temperature, max tokens); its
+# `model.id` is checked against this file at load and a disagreement REFUSES
+# rather than silently preferring one. Two sources of truth for model choice
+# is the exact defect AD A1.5 warns about, one field over.
+#
+# A1-016: every published edition records manifestVersion, the resolved model
+# ids and the commit SHA it was rendered from.
+
+manifestVersion: "1.0.0"
+
+# Model tiering per AD A1.6: small model for extraction and the judge, frontier
+# model for analysis only. Analysis is where output quality is subjective and
+# where the budget should concentrate; extraction is schema-filling with a
+# deterministic check behind it.
+stages:
+
+  # --- LIVE TODAY ---------------------------------------------------------
+  # The single-call path the pipeline actually runs. WIRE-SPEC-A1 AD A1.1
+  # splits this into `extract` and `analyse` below; that split is a PIPELINE
+  # CHANGE and is not built. Until it is, this stage is what generate.js uses,
+  # and its prompt lives in a file rather than a string literal so A1-014
+  # holds today rather than after the restructure.
+  combined:
+    status: active
+    prompt: task.combined.md
+    profile: analyst-profile.md
+    model: claude-sonnet-5
+    version: "1.0.0"
+    note: >
+      Legacy single-call generation: extraction and analysis in one request.
+      Carries both verification regimes on one gate, which is the defect
+      WIRE-SPEC-A1 section 1 identifies. Superseded by extract + analyse.
+
+  # --- SPECIFIED, NOT BUILT ------------------------------------------------
+  extract:
+    status: planned
+    prompt: task.extract.md
+    profile: null            # extraction needs no voice; the profile is analysis-only
+    model: claude-haiku-4-5-20251001
+    version: "1.0.0"
+    note: "S2. Schema-filling with a deterministic check behind it -- small model per AD A1.6."
+
+  analyse:
+    status: planned
+    prompt: task.analysis.md
+    profile: analyst-profile.md
+    model: claude-opus-5
+    version: "1.0.0"
+    note: >
+      S4. Batched per section, write-restricted to the `w` field (AD A1.3).
+      Frontier model: this is the one stage whose output cannot be verified
+      deterministically, so it is scored rather than gated, and it is where
+      the budget concentrates.
+
+  judge:
+    status: planned
+    prompt: judge.analysis.md
+    profile: null            # the judge scores against a rubric, not from the voice
+    model: claude-haiku-4-5-20251001
+    version: "1.0.0"
+    note: "S5. Runs only on lines that survive the deterministic gates."
+
+# A1-002 / section 8 decision 3: cross-edition context depth. DTOG's
+# recommendation is 6 editions (three days) -- enough for recurrence claims,
+# small enough to stay inside the cache prefix budget. NOT RATIFIED; the value
+# is here so the build is not blocked and so the ratified value has one place
+# to land.
+crossEditionContext:
+  editions: 6
+  ratified: false
+
+# A1-017: the cache prefix is the analyst profile then the task contract, in
+# that order, with run context following. The key derives from the content
+# hash of the prefix -- computed by lib/prompts.js, not stored here, so it
+# cannot drift from the files it describes.
+cachePrefix:
+  order: [profile, task]

@@ -1,0 +1,21 @@
+# Filler lexicon v0 -- WIRE-SPEC-A1 Appendix B.
+# Matched case-insensitively as substrings against `w` at gate G-A1.1.
+# EXTEND FROM OBSERVED FAILURES, NOT BY IMAGINATION. A phrase added here
+# because it sounds like filler, rather than because a run produced it, makes
+# the gate harder to reason about and can reject a legitimate line.
+# Lines starting with # are comments; blank lines ignored.
+
+could have implications
+significant implications
+remains to be seen
+will be important to watch
+bears watching
+raises questions about
+it is worth noting
+underscores the importance of
+highlights the need for
+serves as a reminder
+only time will tell
+could impact
+may have far-reaching
+a key development

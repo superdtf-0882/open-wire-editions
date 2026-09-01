@@ -1,0 +1,82 @@
+name: Prompt eval
+
+# WIRE-SPEC-A1 A1-018: a pull request altering any file under prompts/wire/
+# SHALL run the golden-set eval and report the score delta in the PR. A change
+# to analyst-profile.md SHALL additionally attach the rendered before/after
+# lines for the golden set.
+#
+# WHAT THIS GATE ACTUALLY IS, stated plainly because section 4 of the addendum
+# calls it "the control": it runs the DETERMINISTIC gates (G-A1.1..G-A1.3)
+# against the frozen golden set and reports the delta. The judge-model gates
+# (G-A1.4 substance, G-A1.5 evenhandedness) are NOT run -- they need a model
+# call and a key, and neither is wired. So this gate currently measures
+# mechanical conformance, NOT line quality.
+#
+# That distinction matters for section 8 decision 2, which proposes the eval
+# gate as the ONLY review for analyst-profile.md changes. A gate that cannot
+# score quality is a poor sole control for a change whose entire purpose is
+# quality. Recorded here rather than argued in a comment thread.
+
+on:
+  pull_request:
+    paths:
+      - 'prompts/wire/**'
+      - 'lib/prompts.js'
+      - 'lib/analysis-gates.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm ci --omit=dev
+
+      - name: Score the base commit
+        run: |
+          git stash push --include-untracked --quiet || true
+          git checkout --quiet ${{ github.event.pull_request.base.sha }} -- prompts/wire lib/prompts.js lib/analysis-gates.js 2>/dev/null || true
+          node test/analysis.test.js > /dev/null 2>&1 || true
+          cp prompts/wire/evals/last-score.json /tmp/base-score.json 2>/dev/null || echo '{}' > /tmp/base-score.json
+          git checkout --quiet HEAD -- prompts/wire lib/prompts.js lib/analysis-gates.js
+
+      - name: Score the head commit
+        run: node test/analysis.test.js | tee /tmp/head-output.txt
+
+      - name: Report the delta
+        run: |
+          node -e "
+            const fs=require('fs');
+            const base=JSON.parse(fs.readFileSync('/tmp/base-score.json','utf8'));
+            const head=JSON.parse(fs.readFileSync('prompts/wire/evals/last-score.json','utf8'));
+            const row=(k,l)=>{
+              const b=base[k], h=head[k];
+              const d=(typeof b==='number'&&typeof h==='number')?(h-b):null;
+              return '| '+l+' | '+(b??'-')+' | '+(h??'-')+' | '+(d===null?'-':(d>0?'+':'')+d)+' |';
+            };
+            const md=['## Golden-set eval','','| Gate | base | head | delta |','|---|---|---|---|',
+              row('g1','G-A1.1 no filler'),row('g2','G-A1.2 shape'),
+              row('g3','G-A1.3 no new facts'),row('clean','all three'),'',
+              'Deterministic gates only. **The judge gates (G-A1.4, G-A1.5) are not run** -- this measures mechanical conformance, not line quality.'
+            ].join('\n');
+            fs.writeFileSync('/tmp/delta.md',md); console.log(md);
+          "
+          cat /tmp/delta.md >> "$GITHUB_STEP_SUMMARY"
+
+      # A1-018's second half: a change to the profile attaches before/after
+      # lines. Attached as an artifact rather than a comment -- 85 rendered
+      # lines is not a readable PR comment.
+      - name: Attach before/after for a profile change
+        if: contains(github.event.pull_request.changed_files, 'analyst-profile.md')
+        uses: actions/upload-artifact@v4
+        with:
+          name: profile-before-after
+          path: prompts/wire/evals/
+          retention-days: 30

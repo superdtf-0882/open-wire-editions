@@ -30,7 +30,7 @@ const { load } = require('./lib/config');
 const { runCluster, estimateCost } = require('./lib/anthropic');
 const { build } = require('./lib/edition');
 const { runGates } = require('./lib/gates');
-const { PROMPT_VERSION } = require('./lib/prompt');
+const prompt = require('./lib/prompt');   // prompt.PROMPT_VERSION resolves from manifest.yaml (A1-015)
 const { revalidate } = require('./revalidate');
 
 const ROOT = __dirname;
@@ -91,7 +91,7 @@ async function main() {
   // makes it a control under RULE-10 rather than a note.
   if (!DRY && !FIXTURE && process.env.OPEN_WIRE_PROMPT_APPROVED !== 'true') {
     console.error(
-      'REFUSED: the synthesis prompt (lib/prompt.js v' + PROMPT_VERSION + ') is not approved for Production.\n' +
+      'REFUSED: the synthesis prompt (lib/prompt.js v' + prompt.PROMPT_VERSION + ') is not approved for Production.\n' +
       'P-07 requires David\'s approval before a production run; WP-WIRE-01 activity 5 is the act that gives it.\n' +
       'Declared crossing: set OPEN_WIRE_PROMPT_APPROVED=true once approval is on the record. See KILL-SWITCH.md.');
     process.exit(3);
@@ -99,7 +99,7 @@ async function main() {
 
   const deadline = startedAt.getTime() + RUN_BUDGET_MS;
   console.log('Open Wire generate -- ' + startedAt.toISOString() + (DRY ? ' [DRY RUN]' : ''));
-  console.log('  model ' + cfg.model.id + ', prompt v' + PROMPT_VERSION + ', ' + cfg.clusters.length + ' clusters');
+  console.log('  model ' + cfg.model.id + ', prompt v' + prompt.PROMPT_VERSION + ', ' + cfg.clusters.length + ' clusters');
 
   // Five clusters, concurrently -- they are independent (EXAMPLE-CALL.md).
   const results = FIXTURE
@@ -133,7 +133,7 @@ async function main() {
   const runReport = {
     startedAt: startedAt.toISOString(),
     gatesPassed,
-    promptVersion: PROMPT_VERSION,
+    promptVersion: prompt.PROMPT_VERSION,
     model: cfg.model.id,
     durationMs: Date.now() - startedAt.getTime(),
     costUsd: costUsd == null ? null : Number(costUsd.toFixed(2)),
