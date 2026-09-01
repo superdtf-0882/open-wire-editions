@@ -144,7 +144,9 @@ check('G-A1.3 flags a proper noun absent from the brief -- and marks it HARD', (
 });
 check('G-A1.3 accepts a possessive form of a verified noun', () => {
   const item = { headline: 'Beijing holds data', brief: 'Beijing has not shared hydrological data.', source: 'AP' };
-  assert.strictEqual(A.gA1_3("Beijing's handling of the data is the live test of the arrangement.", item).status, 'pass');
+  // MID-SENTENCE deliberately: a sentence-initial possessive is skipped by the
+  // sentence-start rule and would pass without exercising this path at all.
+  assert.strictEqual(A.gA1_3("The live test is Beijing's handling of the data across that border.", item).status, 'pass');
 });
 
 

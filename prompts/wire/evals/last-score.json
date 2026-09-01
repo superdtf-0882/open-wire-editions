@@ -2,8 +2,8 @@
   "total": 85,
   "g1": 85,
   "g2": 81,
-  "g3": 10,
-  "clean": 8,
+  "g3": 13,
+  "clean": 11,
   "g3NumeralsOnly": 66,
   "failures": {
     "G-A1.1": [],
@@ -44,11 +44,7 @@
       },
       {
         "id": "4fcf35fdaa59bdf5",
-        "detail": "unverified proper noun(s): Belt-and-Road-adjacent, Latin, American, Ecuador's -- adjudicate before drop"
-      },
-      {
-        "id": "e1144be96ac0744d",
-        "detail": "unverified proper noun(s): Guinea-Bissau's -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Belt-and-Road-adjacent, Latin, American -- adjudicate before drop"
       },
       {
         "id": "06a10d373bae4e17",
@@ -60,7 +56,7 @@
       },
       {
         "id": "189439eccd30d810",
-        "detail": "unverified proper noun(s): SCO's, Moscow, Tehran, Gulf, Western -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Moscow, Tehran, Gulf, Western -- adjudicate before drop"
       },
       {
         "id": "852c3f85d4b685ac",
@@ -68,15 +64,11 @@
       },
       {
         "id": "96940734a51c091b",
-        "detail": "unverified proper noun(s): Commission's, Euroclear's -- adjudicate before drop"
-      },
-      {
-        "id": "aedf921509304910",
-        "detail": "unverified proper noun(s): Taipei's -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Commission -- adjudicate before drop"
       },
       {
         "id": "18c4796240ccfe99",
-        "detail": "unverified proper noun(s): Edge's, US-Japan-ROK, Seoul, Tokyo -- adjudicate before drop"
+        "detail": "unverified proper noun(s): US-Japan-ROK, Seoul, Tokyo -- adjudicate before drop"
       },
       {
         "id": "f69533952e09b0c2",
@@ -88,7 +80,7 @@
       },
       {
         "id": "50ad4624ff0a32ed",
-        "detail": "unverified proper noun(s): Palisa's, Western, Moscow, Belarusian, Gomel -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Western, Moscow, Belarusian, Gomel -- adjudicate before drop"
       },
       {
         "id": "b7d726e7762d2e7d",
@@ -100,7 +92,7 @@
       },
       {
         "id": "d2ef4c45018cd638",
-        "detail": "unverified proper noun(s): ISF, Turkey's -- adjudicate before drop"
+        "detail": "unverified proper noun(s): ISF -- adjudicate before drop"
       },
       {
         "id": "6c51d3593c2f5f3f",
@@ -108,7 +100,7 @@
       },
       {
         "id": "a35e6283361960f6",
-        "detail": "unverified proper noun(s): Fed's, Kydland-Prescott -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Kydland-Prescott -- adjudicate before drop"
       },
       {
         "id": "93c5923cb56a6d7e",
@@ -128,7 +120,7 @@
       },
       {
         "id": "d60f6e6822a870ed",
-        "detail": "unverified numeral(s): 33, 3.7, 4400; unverified proper noun(s): PCE, Warsh's -- adjudicate before drop"
+        "detail": "unverified numeral(s): 33, 3.7, 4400; unverified proper noun(s): PCE, Warsh -- adjudicate before drop"
       },
       {
         "id": "0128b639188f88ae",
@@ -148,7 +140,7 @@
       },
       {
         "id": "b3c2e6f40ca51893",
-        "detail": "unverified proper noun(s): Warsaw's, Aegis, Ashore, Polish, European, EW -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Warsaw, Aegis, Ashore, Polish, European, EW -- adjudicate before drop"
       },
       {
         "id": "73527858529ba89d",
@@ -160,7 +152,7 @@
       },
       {
         "id": "d65c1b96a995aa8d",
-        "detail": "unverified numeral(s): 16; unverified proper noun(s): Type, KG, Link, SATURN, NSA's, NATO, ESSOR -- adjudicate before drop"
+        "detail": "unverified numeral(s): 16; unverified proper noun(s): Type, KG, Link, SATURN, NSA, NATO, ESSOR -- adjudicate before drop"
       },
       {
         "id": "4771880ce0d6adea",
@@ -192,7 +184,7 @@
       },
       {
         "id": "b246d97586247de1",
-        "detail": "unverified proper noun(s): DoD-funded, Congress's, Secretary's, Humphrey's-Executor-adjacent -- adjudicate before drop"
+        "detail": "unverified proper noun(s): DoD-funded, Congress, Humphrey's-Executor-adjacent -- adjudicate before drop"
       },
       {
         "id": "ec3126d6bd370413",
@@ -232,7 +224,7 @@
       },
       {
         "id": "6e32af13d5bfbe49",
-        "detail": "unverified proper noun(s): Gigawatt, Tech's, Green, River -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Gigawatt, Green, River -- adjudicate before drop"
       },
       {
         "id": "2f632f74d64afb76",
@@ -240,11 +232,11 @@
       },
       {
         "id": "5c5029142280f540",
-        "detail": "unverified proper noun(s): Washington, County, Lehi, Utah's, Kiln-anchored -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Washington, County, Lehi, Utah, Kiln-anchored -- adjudicate before drop"
       },
       {
         "id": "62ce14efd0018c34",
-        "detail": "unverified proper noun(s): Division, Consumer, Protection's, Sales, Practices, Act, AG's, Legislature -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Division, Consumer, Protection, Sales, Practices, Act, Legislature -- adjudicate before drop"
       },
       {
         "id": "146b2fca5c0baba0",
@@ -268,7 +260,7 @@
       },
       {
         "id": "48a10462b727b2d3",
-        "detail": "unverified proper noun(s): Utah's, Big, September, Idaho -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Big, September, Idaho -- adjudicate before drop"
       },
       {
         "id": "e2f40178cac72f4b",
@@ -276,27 +268,23 @@
       },
       {
         "id": "dc5c9eb2401f57dd",
-        "detail": "unverified numeral(s): 12; unverified proper noun(s): Big, Utah's, NCAA, RPI -- adjudicate before drop"
+        "detail": "unverified numeral(s): 12; unverified proper noun(s): Big, NCAA, RPI -- adjudicate before drop"
       },
       {
         "id": "f7073bcc7502d05e",
-        "detail": "unverified numeral(s): 12; unverified proper noun(s): AD's, NIL, House-settlement, Big -- adjudicate before drop"
+        "detail": "unverified numeral(s): 12; unverified proper noun(s): NIL, House-settlement, Big -- adjudicate before drop"
       },
       {
         "id": "de9afa1c80b27798",
-        "detail": "unverified proper noun(s): Alpine, Vineyard's, Lehi's, Utah -- adjudicate before drop"
-      },
-      {
-        "id": "b4887ceeacf2aa01",
-        "detail": "unverified proper noun(s): UTA's -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Alpine, Vineyard, Utah -- adjudicate before drop"
       },
       {
         "id": "7fd696b78b03e029",
-        "detail": "unverified proper noun(s): FTEs, Utah's -- adjudicate before drop"
+        "detail": "unverified proper noun(s): FTEs, Utah -- adjudicate before drop"
       },
       {
         "id": "32dce18cfb2c20a1",
-        "detail": "unverified proper noun(s): UVU's, BYU, County, Jon, Anderson -- adjudicate before drop"
+        "detail": "unverified proper noun(s): BYU, County, Jon, Anderson -- adjudicate before drop"
       },
       {
         "id": "189301311ac7d005",
@@ -308,7 +296,7 @@
       },
       {
         "id": "ea702d395bb31396",
-        "detail": "unverified proper noun(s): Utah, Legislature's -- adjudicate before drop"
+        "detail": "unverified proper noun(s): Utah, Legislature -- adjudicate before drop"
       },
       {
         "id": "f66ff8a6bbcd40f1",
