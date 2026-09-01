@@ -1,0 +1,6 @@
+# The workflows' `run:` blocks execute as bash on ubuntu-latest, and Node reads
+# these files on Linux runners. CRLF committed from a Windows checkout breaks
+# both. Normalise on the way in; the working copy may still be CRLF locally.
+* text=auto eol=lf
+*.png binary
+*.jpg binary

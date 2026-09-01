@@ -1,0 +1,69 @@
+name: Heartbeat
+
+# REQ-OPS-3, and WP-WIRE-01 activity 4's own framing of why it is still owed:
+# GitHub disables scheduled workflows after 60 DAYS OF REPOSITORY INACTIVITY.
+# A content repository receiving twice-daily commits is not inactive, so the
+# auto-disable should never fire -- BUT THE FAILURE IS SILENT. If generation
+# stops for any other reason, the repository goes quiet, and sixty days later
+# the schedule is disabled too, so the thing that would have recovered on its
+# own is now switched off as well.
+#
+# This job therefore does two separate things, and the second is the one that
+# matters:
+#   1. commits a heartbeat file, which keeps the repository active;
+#   2. CHECKS THAT THE GENERATE SCHEDULE IS STILL ARMED, and FAILS LOUDLY if
+#      it is not, or if no edition has landed in 48 hours.
+#
+# A heartbeat that only keeps the repo alive would mask exactly the failure it
+# is supposed to surface: the repo would look healthy while publishing nothing.
+
+on:
+  schedule:
+    - cron: '17 12 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Keep the repository active
+        run: |
+          mkdir -p .github
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > .github/HEARTBEAT
+          git config user.name  "open-wire-bot"
+          git config user.email "open-wire-bot@users.noreply.github.com"
+          git add .github/HEARTBEAT
+          git diff --staged --quiet || { git commit -m "Heartbeat"; git push; }
+
+      - name: Confirm the generate schedule is still armed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          state=$(gh api "repos/${{ github.repository }}/actions/workflows/generate.yml" --jq .state)
+          echo "generate.yml state: $state"
+          if [ "$state" != "active" ]; then
+            echo "::error::generate.yml is '$state', not 'active'. The schedule is NOT armed and no editions are being produced."
+            exit 1
+          fi
+
+      # An armed schedule that produces nothing is the failure a liveness check
+      # exists to catch. Two slots a day means 48h without an edition is four
+      # consecutive misses, not a delayed run.
+      - name: Confirm an edition landed recently
+        run: |
+          if [ ! -f editions/current.json ]; then
+            echo "::warning::no edition has been published yet"; exit 0
+          fi
+          gen=$(node -p "require('./editions/current.json').generatedAt")
+          age=$(( ( $(date -u +%s) - $(date -u -d "$gen" +%s) ) / 3600 ))
+          echo "latest edition $gen -- ${age}h old"
+          if [ "$age" -gt 48 ]; then
+            echo "::error::latest edition is ${age}h old; four or more scheduled slots have produced nothing."
+            exit 1
+          fi

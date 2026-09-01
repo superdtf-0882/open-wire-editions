@@ -1,0 +1,262 @@
+# The Open Wire — coverage configuration
+# Source of truth for topics, targets, windows, source policy and budget.
+# Editing this file changes behaviour with no code change (REQ-CFG-1 / US-8).
+# Validated against config.schema.json in CI; an invalid config fails the build.
+
+schemaVersion: 1
+promptVersion: "1.0.0"        # stamped into every edition's runReport
+
+site:
+  path: /wire
+  title: The Open Wire
+  tagline: A paywall-free news brief
+  # US-2 AC1 — rendered into server HTML on every edition, never client-injected.
+  automationNotice: >
+    Every brief and analysis line on this page is written by an AI model from
+    the linked sources. It is not reporting, and it is not David Facer's own
+    writing. Follow the link on any headline for the original article.
+  stalenessHours: 26            # US-9 AC3 — show a notice past this age
+  hideAfterHours: 72            # open question Q2; null disables hiding
+
+schedule:
+  timezone: America/Denver
+  slots: ["06:00", "16:00"]
+  # REQ-OPS-1 — if the runner is UTC-only, fire hourly and no-op unless the
+  # local hour matches a slot. Do not hard-code a UTC cron.
+  strategy: hourly-noop
+  maxRunMinutes: 20             # US-6 AC2
+
+budget:
+  maxCostUsdPerRun: 6.00        # REQ-GATE-9
+  maxCostUsdPerMonth: 300.00
+  onMonthlyCapExceeded: pause   # pause | warn
+  searchesPerCluster: 15        # per-call search budget; see R5
+
+windows:
+  default: 24h
+  utahSections: 72h
+  utahSectionsIfThin: 7d
+  scheduledMacroReleases: 5d
+
+model:
+  id: claude-sonnet-5
+  temperature: 0.2
+  maxTokensPerCluster: 8000
+  tools: [web_search]
+  structuredOutput: true        # §9.3 — never parse prose
+
+gates:
+  linkResolution:
+    minPassRate: 0.95
+    hardFailStatuses: [404, 410, 500, 502, 503, 504]
+    warnOnlyStatuses: [403]     # datacenter-IP blocks are not paywalls
+    timeoutMs: 8000
+  recencyMinRate: 0.80
+  carryoverMaxRate: 0.60        # REQ-GATE-7, warn-only
+  briefMaxChars: 700
+  whyMaxChars: 500
+  headlineMaxChars: 160
+
+sources:
+  # Enforced by the validator (REQ-GATE-3), not only by the prompt.
+  deny:
+    - wsj.com
+    - nytimes.com
+    - washingtonpost.com
+    - bloomberg.com
+    - ft.com
+    - economist.com
+    - theatlantic.com
+    - businessinsider.com
+    - theinformation.com
+    - barrons.com
+    - nikkei.com
+    - foreignaffairs.com
+    - politico.com
+    - haaretz.com
+    - theathletic.com
+    - sltrib.com
+    - heraldextra.com
+    - thetimes.co.uk
+    - lemonde.fr
+  prefer:
+    wires:
+      [reuters.com, apnews.com, bbc.com, aljazeera.com, npr.org, theguardian.com,
+       cnbc.com, axios.com, dw.com, france24.com, rferl.org, timesofisrael.com,
+       kyivindependent.com, taipeitimes.com, cbsnews.com, abcnews.go.com,
+       nbcnews.com, thehill.com]
+    tech:
+      [arstechnica.com, theverge.com, techcrunch.com, tomshardware.com,
+       engadget.com, defensenews.com, breakingdefense.com, defensescoop.com,
+       airandspaceforces.com, navalnews.com, spacenews.com]
+    analysis:
+      [csis.org, understandingwar.org, criticalthreats.org, rand.org, iiss.org,
+       sipri.org, carnegieendowment.org, chathamhouse.org, brookings.edu,
+       bruegel.org, piie.com, lawfaremedia.org, justsecurity.org,
+       scotusblog.com, hai.stanford.edu, epoch.ai]
+    primary:
+      [federalreserve.gov, bls.gov, bea.gov, ecb.europa.eu, federalregister.gov,
+       war.gov, dsca.mil, whitehouse.gov, congress.gov, supremecourt.gov,
+       nato.int, aclu.org]
+    utah:
+      [ksl.com, sports.ksl.com, utahnewsdispatch.com, kuer.org, fox13now.com,
+       kutv.com, axios.com, buildingsaltlake.com, techbuzznews.com,
+       utahbusiness.com, stgeorgeutah.com, universe.byu.edu, deseret.com,
+       lehifreepress.com, afcitizen.com]
+    utahOfficial:
+      [le.utah.gov, governor.utah.gov, udot.utah.gov, provo.gov, provo.edu,
+       slc.gov, saltlakecounty.gov, utahcounty.gov, rideuta.com,
+       slcairport.com, utahutes.com, byucougars.com]
+
+# Clusters define how topics are batched into parallel API calls (§9).
+clusters:
+  - id: A
+    topics: [world-news, geopolitics, conflict]
+  - id: B
+    topics: [macro, mic]
+  - id: C
+    topics: [us-news, ai-tech]
+  - id: D
+    topics: [utah-news, utah-tech, utes]
+  - id: E
+    topics: [provo, slc]
+
+groups:
+  - id: global
+    label: Global
+    topics:
+      - id: world-news
+        label: World News
+        minItems: 5
+        targetItems: 8
+        window: default
+        guidance: >
+          Major international stories outside the United States. Prefer events
+          with structural consequence over human-interest coverage.
+
+      - id: geopolitics
+        label: World Geopolitics
+        minItems: 5
+        targetItems: 8
+        window: default
+        guidance: >
+          Great-power dynamics, alliances and alliance management, diplomacy,
+          summits, elections with external consequence, trade and sanctions
+          statecraft, resource and energy leverage.
+
+      - id: conflict
+        label: Global Conflict
+        minItems: 5
+        targetItems: 8
+        window: default
+        guidance: >
+          Active wars, military operations, strikes, ceasefires and their
+          erosion, escalation and de-escalation signals, force posture.
+
+  - id: economy-defense
+    label: Economy & Defense
+    topics:
+      - id: macro
+        label: Macroeconomics
+        minItems: 5
+        targetItems: 8
+        window: scheduledMacroReleases
+        guidance: >
+          Central banks and their communication regimes, inflation prints
+          (CPI/PCE), labor market, GDP, rates and the yield curve, currencies,
+          trade and tariffs, commodities. Cover the US, euro area, China,
+          Japan and the UK. Use the statistical release itself, not coverage
+          of it, wherever it exists.
+
+      - id: mic
+        label: Global Military Industrial Complex
+        minItems: 5
+        targetItems: 8
+        window: default
+        guidance: >
+          Defense procurement and contract awards, primes and suppliers,
+          defense budgets, export controls and ITAR, munitions and
+          solid-rocket-motor capacity, European rearmament and strategic
+          autonomy programmes (EDIP, SAFE, GCAP, FCAS, ESSOR), drone and
+          counter-drone industry, space and C4ISR. Check defense.gov contract
+          announcements and Federal Register arms-sales notifications directly.
+
+  - id: national-tech
+    label: National & Tech
+    topics:
+      - id: us-news
+        label: US News
+        minItems: 5
+        targetItems: 8
+        window: default
+        guidance: >
+          National politics, federal courts and constitutional questions,
+          agencies, Congress, immigration policy and enforcement, major
+          domestic events. Prefer stories where the legal mechanism is the
+          story. Stay strictly factual and evenhanded.
+
+      - id: ai-tech
+        label: AI Business Tech
+        minItems: 5
+        targetItems: 8
+        window: default
+        guidance: >
+          AI company news, funding and M&A, model releases, enterprise
+          adoption evidence, chips and compute buildout, power and data-center
+          constraints, AI regulation, and labor-market effects.
+
+  - id: utah
+    label: Utah
+    topics:
+      - id: utah-news
+        label: Utah News
+        minItems: 4
+        targetItems: 7
+        window: utahSections
+        guidance: >
+          Statewide: the Legislature and interim committees, governor's
+          office, courts and judicial confirmations, water and the Great Salt
+          Lake, energy and nuclear (Operation Gigawatt), housing and growth,
+          education, public lands, wildfire, immigration enforcement in Utah.
+
+      - id: utah-tech
+        label: Utah Tech
+        minItems: 4
+        targetItems: 6
+        window: utahSections
+        guidance: >
+          Silicon Slopes, funding rounds and exits, tech employment, data
+          centers and AI infrastructure siting, state tech policy and AG
+          technology litigation, the aerospace-defense cluster around Hill AFB.
+
+      - id: utes
+        label: Utah Utes
+        minItems: 4
+        targetItems: 6
+        window: utahSections
+        guidance: >
+          University of Utah athletics. Football in season, plus basketball,
+          gymnastics, volleyball and soccer. Include Big 12 context, roster and
+          revenue-share developments.
+
+      - id: provo
+        label: Provo Local News
+        minItems: 4
+        targetItems: 6
+        window: utahSectionsIfThin
+        guidance: >
+          City of Provo and its council, Utah County government, BYU, UVU,
+          Provo and Timpanogos school districts, development and housing,
+          transit, and the north Utah County cities (Orem, Lindon, Vineyard,
+          Lehi, American Fork).
+
+      - id: slc
+        label: Salt Lake City Local News
+        minItems: 4
+        targetItems: 7
+        window: utahSectionsIfThin
+        guidance: >
+          SLC city government and council, Salt Lake County, downtown and
+          Granary development, housing and homelessness policy, air quality,
+          transit and the airport, 2034 Winter Olympics preparation, schools,
+          and local business.

@@ -1,0 +1,102 @@
+name: Generate edition
+
+# REQ-OPS-1: scheduling honours America/Denver ACROSS DST. GitHub cron is
+# UTC-only, so this fires HOURLY and no-ops unless the local hour matches a
+# configured slot. The spec names this as one of its two permitted approaches
+# and it is the one that needs no twice-yearly maintenance -- the other
+# (recompute the cron in spring and autumn) is a recurring manual act that
+# fails silently when forgotten.
+#
+# REQ-OPS-2: runs are mutually exclusive. The concurrency group below prevents
+# overlap; cancel-in-progress is FALSE because cancelling a half-finished run
+# is worse than letting it complete -- it has already spent the API budget.
+
+on:
+  schedule:
+    - cron: '5 * * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Run regardless of the local hour'
+        type: boolean
+        default: false
+      dry_run:
+        description: 'Validate without writing or committing'
+        type: boolean
+        default: false
+
+concurrency:
+  group: open-wire-generate
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  slot-check:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci --omit=dev
+      - id: check
+        run: |
+          if [ "${{ inputs.force }}" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "forced by workflow_dispatch"
+          else
+            node tools/slot-check.js >> "$GITHUB_OUTPUT"
+          fi
+
+  generate:
+    needs: slot-check
+    if: needs.slot-check.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci --omit=dev
+
+      # REQ-SEC-1. The key reaches the process as an environment variable and
+      # nothing else. It is never written to a file, never echoed, and
+      # lib/anthropic.js redacts it out of every error it raises.
+      - name: Generate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPEN_WIRE_REVALIDATE_SECRET: ${{ secrets.OPEN_WIRE_REVALIDATE_SECRET }}
+          OPEN_WIRE_PROMPT_APPROVED: ${{ vars.OPEN_WIRE_PROMPT_APPROVED }}
+        run: node generate.js ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      # Reached only when the gates passed -- generate.js exits non-zero
+      # otherwise and this step never runs. That is the fail-closed property:
+      # a failed run does not commit, so the site keeps serving the last good
+      # edition with no rollback step.
+      - name: Commit the edition
+        if: success() && !inputs.dry_run
+        run: |
+          git config user.name  "open-wire-bot"
+          git config user.email "open-wire-bot@users.noreply.github.com"
+          git add editions run-reports
+          if git diff --staged --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "Edition $(node -p "require('./editions/current.json').editionId")"
+            git push
+          fi
+
+      # The run report is kept even when the gates FAIL -- that is the run you
+      # most need to read. if: always() is deliberate.
+      - name: Upload run report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-report
+          path: run-reports/
+          retention-days: 90
