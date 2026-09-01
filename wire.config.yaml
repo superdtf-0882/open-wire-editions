@@ -53,6 +53,14 @@ gates:
     timeoutMs: 8000
   recencyMinRate: 0.80
   carryoverMaxRate: 0.60        # REQ-GATE-7, warn-only
+  # WIRE-SPEC-A1 S5 gates on the "Why It Matters" line. "report" runs them
+  # and records every verdict without dropping anything; "enforce" drops a
+  # failing line (the ITEM still publishes -- A1-011).
+  # REPORT UNTIL THE G-A1.3 CALIBRATION IS RULED. Measured 2026-09-01 with
+  # real article text retrieved for 72 of 85 golden lines: 54 still fail, of
+  # which only 9 involve a numeral. Enforcing today strips the analysis from
+  # about two thirds of items, including lines a human wrote and published.
+  analysisEnforcement: report
   briefMaxChars: 700
   whyMaxChars: 500
   headlineMaxChars: 160

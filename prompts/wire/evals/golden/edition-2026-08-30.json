@@ -1,5 +1,5 @@
 {
-  "note": "Frozen from open-wire-spec.md v1.0 fixture, edition 2026-08-30T22:05:00Z. These w lines were accepted in a live run and are the baseline the judge rubric is scored against (A1-018).",
+  "note": "Frozen from open-wire-spec.md v1.0 fixture, edition 2026-08-30T22:05:00Z. These w lines were accepted in a live run and are the baseline the judge rubric is scored against (A1-018). Includes url so the Option B experiment can retrieve source text; url was omitted from the first freeze.",
   "editionId": "2026-08-30T22:05:00Z",
   "items": [
     {
@@ -8,7 +8,8 @@
       "headline": "Gunfire and explosions across Niamey near the presidential palace and airport",
       "source": "Al Jazeera",
       "brief": "Sustained gunfire and blasts were reported early Saturday in several districts of Niger's capital, including around Diori Hamani international airport and the presidential palace. Niger's military government under Gen. Abdourahamane Tchiani, in power since the July 2023 coup that removed Mohamed Bazoum, gave no immediate comment. No casualty figures were released.",
-      "w": "Niger anchors the Alliance of Sahel States alongside Mali and Burkina Faso and has hosted Russian security cooperation since expelling French and US forces, so a rupture at the top resets the region's alignment question. Coup-proofing regimes are structurally prone to intra-junta contestation — the same praetorian mechanism that produced 2023 recurring against its own authors."
+      "w": "Niger anchors the Alliance of Sahel States alongside Mali and Burkina Faso and has hosted Russian security cooperation since expelling French and US forces, so a rupture at the top resets the region's alignment question. Coup-proofing regimes are structurally prone to intra-junta contestation — the same praetorian mechanism that produced 2023 recurring against its own authors.",
+      "url": "https://www.aljazeera.com/news/2026/8/29/gunfire-blasts-heard-in-several-areas-of-niger-capital-niamey"
     },
     {
       "id": "2a943d0685c46c0c",
@@ -16,7 +17,8 @@
       "headline": "Nepal-Tibet flood toll passes 620 as rescue resumes beneath an unstable barrier lake",
       "source": "Al Jazeera",
       "brief": "Nepal now reports 626 dead and 1,924 missing; Tibet reports 7 dead and 558 missing after Wednesday's glacier collapse at roughly 5,200 metres sent a debris surge down the valley, raising the Trishuli nine metres in 30 minutes. Rescue work resumed after a pause when the newly formed barrier lake began overflowing. Glacial-hazards scientist Alton Byers warned the dam is loose debris and highly unstable.",
-      "w": "A transboundary hazard with the impoundment on the Chinese side and the exposed population downstream in Nepal is a live test of whether Beijing shares real-time hydrological data across a border where it has historically treated such data as leverage. It also converts glacial-lake outburst risk from a modelling abstraction into an operational civil-protection problem for the whole Himalayan arc."
+      "w": "A transboundary hazard with the impoundment on the Chinese side and the exposed population downstream in Nepal is a live test of whether Beijing shares real-time hydrological data across a border where it has historically treated such data as leverage. It also converts glacial-lake outburst risk from a modelling abstraction into an operational civil-protection problem for the whole Himalayan arc.",
+      "url": "https://www.aljazeera.com/news/2026/8/29/nepal-and-china-resume-flood-rescue-as-death-toll-nears-600"
     },
     {
       "id": "81b7332bdb73d6b8",
@@ -24,7 +26,8 @@
       "headline": "Iceland votes on reopening EU accession talks",
       "source": "Al Jazeera",
       "brief": "Icelanders voted Saturday on whether to restart accession negotiations frozen 13 years ago, under PM Kristrun Frostadottir's Social Democrat-led government. Gallup polling sat inside the margin — one survey showed 51.6% opposed to 48.4% in favour, another 51.3% in favour. Fisheries, roughly 8% of GDP directly, and the Common Fisheries Policy remain the central obstacle; a yes only opens talks, with a second referendum required on any accession treaty.",
-      "w": "This is a sovereignty-versus-monetary-stability trade in its purest institutional form: euro adoption would cut borrowing and inflation costs but surrender the krona and quota control. The two-referendum sequencing is a commitment device that lets voters authorise negotiation without pre-committing to accession — the design Norway lacked in 1972 and 1994."
+      "w": "This is a sovereignty-versus-monetary-stability trade in its purest institutional form: euro adoption would cut borrowing and inflation costs but surrender the krona and quota control. The two-referendum sequencing is a commitment device that lets voters authorise negotiation without pre-committing to accession — the design Norway lacked in 1972 and 1994.",
+      "url": "https://www.aljazeera.com/news/2026/8/29/why-is-iceland-considering-joining-the-eu"
     },
     {
       "id": "31bfb8e691453927",
@@ -32,7 +35,8 @@
       "headline": "Norway's King Harald V dies at 89; Haakon VIII accedes",
       "source": "NPR",
       "brief": "King Harald V died Friday at 89 of haemolytic anaemia after a 35-year reign. His 53-year-old son acceded immediately as King Haakon VIII and is scheduled to take the constitutional oath before the Storting on Tuesday. No funeral date has been set.",
-      "w": "Norwegian succession is automatic and the oath before parliament, not a coronation, is the constitutive act — a clean illustration of a monarchy whose legitimacy runs through the legislature. The transition lands as Norway debates Arctic security and the deployment of a $1.9tn sovereign wealth fund, where the crown's convening role is symbolic but not trivial."
+      "w": "Norwegian succession is automatic and the oath before parliament, not a coronation, is the constitutive act — a clean illustration of a monarchy whose legitimacy runs through the legislature. The transition lands as Norway debates Arctic security and the deployment of a $1.9tn sovereign wealth fund, where the crown's convening role is symbolic but not trivial.",
+      "url": "https://www.npr.org/2026/08/28/nx-s1-5947778/norways-king-harald-v-dies-king-haakon-viii"
     },
     {
       "id": "4fcf35fdaa59bdf5",
@@ -40,7 +44,8 @@
       "headline": "Ecuador sentences ex-president Lenin Moreno to five years for bribery",
       "source": "Al Jazeera",
       "brief": "A Quito court convicted Moreno, 73, over the Coca Codo Sinclair hydroelectric project, finding Chinese state firm Sinohydro paid about $76.1 million in bribes through sham consulting contracts between 2009 and 2018, with Moreno and relatives receiving over $1 million during his 2007-2013 vice presidency. His wife, daughter, two brothers and their wives received two-and-a-half-year terms; China's former ambassador Cai Runguo also got five years.",
-      "w": "Convicting a foreign ambassador alongside a former head of state is an unusually direct judicial finding against Chinese state-firm conduct in a Belt-and-Road-adjacent infrastructure deal, and it hardens the evidentiary record other Latin American courts can cite. It also continues Ecuador's pattern of criminal accountability arriving only after a president loses power — deterrence that operates on ex-officeholders rather than incumbents."
+      "w": "Convicting a foreign ambassador alongside a former head of state is an unusually direct judicial finding against Chinese state-firm conduct in a Belt-and-Road-adjacent infrastructure deal, and it hardens the evidentiary record other Latin American courts can cite. It also continues Ecuador's pattern of criminal accountability arriving only after a president loses power — deterrence that operates on ex-officeholders rather than incumbents.",
+      "url": "https://www.aljazeera.com/news/2026/8/29/ecuador-sentences-ex-president-moreno-to-five-years-in-jail-in-bribery-case"
     },
     {
       "id": "e1144be96ac0744d",
@@ -48,7 +53,8 @@
       "headline": "Guinea-Bissau votes on a constitution concentrating presidential power",
       "source": "Al Jazeera",
       "brief": "The August 30 referendum follows the November 2025 coup that seized power mid-election. The draft strips the prime minister's authority, lets the president appoint and dismiss ministers, cuts parliament from 102 to 65 seats and constituencies from 29 to 12, and imposes a five-year residency rule plus roughly $90,000 deposit on presidential candidates and 5,000-member thresholds on parties. The PAIGC and civil society groups reject it.",
-      "w": "Semi-presidentialism has been the standing explanation for Guinea-Bissau's chronic executive-legislative deadlock, but resolving it by referendum written under military rule converts a coup into constitutional text — the classic autogolpe laundering sequence. The candidacy deposits and party-membership floors are the operative provisions: they raise entry costs enough to fix the outcome without formally banning anyone."
+      "w": "Semi-presidentialism has been the standing explanation for Guinea-Bissau's chronic executive-legislative deadlock, but resolving it by referendum written under military rule converts a coup into constitutional text — the classic autogolpe laundering sequence. The candidacy deposits and party-membership floors are the operative provisions: they raise entry costs enough to fix the outcome without formally banning anyone.",
+      "url": "https://www.aljazeera.com/news/2026/8/29/guinea-bissau-votes-on-a-stronger-presidency-whats-at-stake"
     },
     {
       "id": "55a0ec16b32fbb6f",
@@ -56,7 +62,8 @@
       "headline": "Settlers besiege Palestinian homes in Qusra as Israeli forces add roadblocks",
       "source": "Al Jazeera",
       "brief": "Settlers backed by Israeli forces surrounded a home south of Nablus on Saturday with at least four Palestinians trapped inside, setting fires on adjacent land and injuring one resident. Three homes in the Ras al-Ain area have been under siege since August 9 without reliable water, electricity or food, and the military added three roadblocks around the Ras al-Ain hill on August 28. The army said it removed Israeli rioters and confiscated vehicles.",
-      "w": "Sustained displacement pressure on individual households, rather than formal expropriation, is the mechanism by which facts on the ground now change — hard to litigate, easy to deny, cumulatively decisive for any territorial settlement. Israeli forces simultaneously dispersing settlers and adding roadblocks that isolate the same families shows the enforcement gap is structural, not episodic."
+      "w": "Sustained displacement pressure on individual households, rather than formal expropriation, is the mechanism by which facts on the ground now change — hard to litigate, easy to deny, cumulatively decisive for any territorial settlement. Israeli forces simultaneously dispersing settlers and adding roadblocks that isolate the same families shows the enforcement gap is structural, not episodic.",
+      "url": "https://www.aljazeera.com/news/2026/8/29/israeli-settlers-surround-palestinian-home-in-occupied-west-banks-qusra"
     },
     {
       "id": "06a10d373bae4e17",
@@ -64,7 +71,8 @@
       "headline": "Six months of the Iran war, in numbers",
       "source": "Al Jazeera",
       "brief": "The tally: at least 4,350 killed in Lebanon, 3,527 in Iran, 28 in Gulf states, 60 Israeli and 18 US service members killed with 757 US personnel wounded. Hormuz traffic has fallen from about 100 ships daily to seven, with 70 confirmed attacks on vessels. Official US war costs stand at $37.5 billion against internal Pentagon estimates of $80-100 billion; Brent is up about 22% from $72.48 to $88.58 after peaking at $120.88.",
-      "w": "A 93% collapse in Hormuz transits producing only a 22% Brent move is the anomaly worth explaining — the chokepoint's pricing power has been partly substituted away by reserves, rerouting and demand destruction, weakening the coercive value Tehran assumed it held. The gap between the $37.5bn official and $80-100bn internal cost estimate is the fiscal analogue: sustained naval enforcement financed off-budget defers rather than removes the constraint."
+      "w": "A 93% collapse in Hormuz transits producing only a 22% Brent move is the anomaly worth explaining — the chokepoint's pricing power has been partly substituted away by reserves, rerouting and demand destruction, weakening the coercive value Tehran assumed it held. The gap between the $37.5bn official and $80-100bn internal cost estimate is the fiscal analogue: sustained naval enforcement financed off-budget defers rather than removes the constraint.",
+      "url": "https://www.aljazeera.com/news/2026/8/28/us-israel-war-on-iran-six-months-down-the-line-in-numbers"
     },
     {
       "id": "c4cccbf946fbefae",
@@ -72,7 +80,8 @@
       "headline": "Trump announces US majority control over 65 billion barrels of Venezuelan reserves",
       "source": "Al Jazeera",
       "brief": "Trump said the US secured majority control of 65 billion barrels of Venezuela's proven reserves across 17 fields, projecting $209 billion to Venezuela's treasury and nearly $100 billion in private investment. A new private company would hold 100-year development rights with the US taking 55% of effective output plus purchase-at-cost rights. Rubio and Hegseth negotiated; interim President Delcy Rodriguez confirmed. Venezuela currently produces about 1.25 million barrels per day, and Venezuelan law reserves core oil operations to the state.",
-      "w": "The enforceability question is whether an interim government installed after the February capture of Maduro can bind a successor — a sovereign-debt-style validity problem transposed to resource concessions, and one Venezuela's own hydrocarbons law appears to foreclose. If it holds, it is the most consequential attempt since the 1970s nationalisations to reverse resource nationalism by force majeure rather than contract."
+      "w": "The enforceability question is whether an interim government installed after the February capture of Maduro can bind a successor — a sovereign-debt-style validity problem transposed to resource concessions, and one Venezuela's own hydrocarbons law appears to foreclose. If it holds, it is the most consequential attempt since the 1970s nationalisations to reverse resource nationalism by force majeure rather than contract.",
+      "url": "https://www.aljazeera.com/news/2026/8/29/trump-announces-biggest-oil-deal-in-world-history-with-venezuela"
     },
     {
       "id": "189439eccd30d810",
@@ -80,7 +89,8 @@
       "headline": "SCO opens in Bishkek at 25 with Xi, Putin, Modi, Sharif and Pezeshkian",
       "source": "CTV News / CP24",
       "brief": "The August 29-30 anniversary summit brings roughly a dozen heads of state, chaired by Kyrgyz President Sadyr Japarov. The ten-member bloc — Russia, China, India, Pakistan, Iran, four Central Asian states and Belarus — accounts for about 40% of world population and 25% of global GDP, with 15 dialogue partners including Turkey, Saudi Arabia and Qatar. Putin holds bilaterals with Pezeshkian and Xi.",
-      "w": "The SCO's value to Moscow and Tehran is demonstrative rather than operational — no mutual-defence clause, no enforcement machinery — but co-presence with India and the Gulf dialogue partners raises the reputational cost of Western sanctions coalitions. Watch whether the communique moves past boilerplate on unilateral coercive measures toward anything institutional; that is the threshold separating a summit photo from a bloc."
+      "w": "The SCO's value to Moscow and Tehran is demonstrative rather than operational — no mutual-defence clause, no enforcement machinery — but co-presence with India and the Gulf dialogue partners raises the reputational cost of Western sanctions coalitions. Watch whether the communique moves past boilerplate on unilateral coercive measures toward anything institutional; that is the threshold separating a summit photo from a bloc.",
+      "url": "https://www.cp24.com/news/world/2026/08/29/leaders-of-russia-china-iran-to-attend-summit-in-kyrgyzstan/"
     },
     {
       "id": "852c3f85d4b685ac",
@@ -88,7 +98,8 @@
       "headline": "Kremlin confirms Xi-Putin talks on Power of Siberia 2 for August 31",
       "source": "South China Morning Post",
       "brief": "Presidential aide Yury Ushakov said the pipeline will be discussed bilaterally when Xi and Putin meet in Bishkek on August 31, their second in-person meeting of 2026, with further discussion expected at the Eastern Economic Forum. The project would substantially raise Russian pipeline gas deliveries to China and has been under negotiation for years without a binding price agreement.",
-      "w": "Power of Siberia 2 is the clearest available measure of asymmetry in the relationship: Russia needs volume replacement for lost European demand, China has alternatives, and the price gap is where that bargaining power shows up. A signed commercial agreement would mark Russia accepting monopsony terms — a durable structural shift, not a summit gesture."
+      "w": "Power of Siberia 2 is the clearest available measure of asymmetry in the relationship: Russia needs volume replacement for lost European demand, China has alternatives, and the price gap is where that bargaining power shows up. A signed commercial agreement would mark Russia accepting monopsony terms — a durable structural shift, not a summit gesture.",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3365710/xi-putin-meet-bishkek-power-siberia-2-pipeline-talks-kremlin"
     },
     {
       "id": "96940734a51c091b",
@@ -96,7 +107,8 @@
       "headline": "Four EU states push to reopen the frozen-assets reparations loan before the Sept 1-2 council",
       "source": "Euromaidan Press",
       "brief": "A draft letter from Sweden, the Netherlands, Spain and Poland asks EU foreign ministers meeting in Ireland on September 1-2 to restart work toward a reparations loan against more than 200 billion euros in immobilised Russian central bank assets. Belgium, where most assets sit at Euroclear, blocked the plan in December 2025 over legal retaliation and financial-stability risk. A separate 90 billion euro EU loan already covers roughly two-thirds of Ukraine's 2026-2027 financing needs.",
-      "w": "The Commission's design deliberately avoids confiscation — lending against cash balances while the principal stays frozen — because outright seizure would breach sovereign immunity norms and invite reserve flight from euro-denominated assets. Belgium's veto is not obstruction so much as correct pricing of a tail risk it alone bears, which is why any solution has to mutualise Euroclear's exposure before it can pass."
+      "w": "The Commission's design deliberately avoids confiscation — lending against cash balances while the principal stays frozen — because outright seizure would breach sovereign immunity norms and invite reserve flight from euro-denominated assets. Belgium's veto is not obstruction so much as correct pricing of a tail risk it alone bears, which is why any solution has to mutualise Euroclear's exposure before it can pass.",
+      "url": "https://euromaidanpress.com/2026/08/27/eu-states-revive-frozen-russian-assets-ukraine/"
     },
     {
       "id": "aedf921509304910",
@@ -104,7 +116,8 @@
       "headline": "Taiwan's opposition rejects the Cabinet's NT$210bn drone budget and passes its own",
       "source": "Taipei Times",
       "brief": "The KMT-TPP majority defeated the Executive Yuan's NT$210 billion (US$6.62 billion) special budget to acquire roughly 210,000 drones by 2031, substituting NT$40 billion a year for six years through regular budgets with the Ministry of Economic Affairs leading civilian procurement. Defence Minister Wellington Koo said the annual cap would prevent effective capability build-up, noting the ministry alone planned NT$42.1 billion in drone spending next year. Premier Cho Jung-tai said he will assess whether to countersign.",
-      "w": "The headline total is larger but the annual cap is the binding constraint — special budgets front-load procurement and let manufacturers commit to production lines, while annual appropriations subject the same money to yearly veto. This is legislative control of defence spending used as a lever over the executive, and the practical effect is to stretch delivery past the window Taipei's own planners treat as decisive."
+      "w": "The headline total is larger but the annual cap is the binding constraint — special budgets front-load procurement and let manufacturers commit to production lines, while annual appropriations subject the same money to yearly veto. This is legislative control of defence spending used as a lever over the executive, and the practical effect is to stretch delivery past the window Taipei's own planners treat as decisive.",
+      "url": "https://www.taipeitimes.com/News/front/archives/2026/08/28/2003863263"
     },
     {
       "id": "18c4796240ccfe99",
@@ -112,7 +125,8 @@
       "headline": "US, South Korea and Japan set Freedom Edge for September 7-11 as Pyongyang warns of response",
       "source": "Georgia Public Broadcasting / NPR",
       "brief": "The five-day trilateral exercise will run in waters off Jeju Island. Pyongyang's foreign ministry said on August 27 it would make a serious, immediate and powerful response, having already fired roughly 10 short-range ballistic missiles after the shortened Ulchi Freedom Shield. Trump had ordered the Pentagon to substantially reduce the bilateral drill as a goodwill gesture; North Korea rejected it as insufficient and refuses talks while denuclearisation remains a precondition.",
-      "w": "A clean test of the unilateral-restraint theory of reassurance: the concession was made, publicly rejected, and produced neither talks nor a testing pause — while the trilateral track it was meant to soften proceeded anyway. Freedom Edge's persistence matters more than its size, since institutionalising US-Japan-ROK interoperability is the part that survives changes of government in Seoul and Tokyo."
+      "w": "A clean test of the unilateral-restraint theory of reassurance: the concession was made, publicly rejected, and produced neither talks nor a testing pause — while the trilateral track it was meant to soften proceeded anyway. Freedom Edge's persistence matters more than its size, since institutionalising US-Japan-ROK interoperability is the part that survives changes of government in Seoul and Tokyo.",
+      "url": "https://www.gpb.org/news/2026/08/28/us-south-korea-and-japan-hold-drill-north-korea-ramps-pressure-on-us"
     },
     {
       "id": "f69533952e09b0c2",
@@ -120,7 +134,8 @@
       "headline": "CSIS: Hormuz disruption reprices oil less than expected, but strategic buffers are nearly gone",
       "source": "CSIS",
       "brief": "Panelists Clay Seigle, Roger Diwan and Kevin Book attribute crude trading near $90 rather than $120-plus largely to Chinese demand management — imports cut by about 5 million b/d at peak disruption, drawing on accumulated reserves. The US SPR's 172-million-barrel authorisation is nearly exhausted with the reserve below 300 million barrels. They argue three market assumptions have broken: reliable Hormuz transit, OPEC's regulatory capacity after the UAE's exit, and meaningful spare capacity, with roughly 8 million b/d now moving via alternative Omani routes under naval escort.",
-      "w": "If Chinese stockpiles rather than US policy are capping prices, the effective marginal supplier of stability is Beijing — a reversal of the postwar assumption that Washington underwrites the Gulf price floor. The SPR figure is the harder constraint: a depleted reserve removes the instrument that made US escalation in the Gulf economically survivable, exactly the kind of capability loss that changes an adversary's read of resolve."
+      "w": "If Chinese stockpiles rather than US policy are capping prices, the effective marginal supplier of stability is Beijing — a reversal of the postwar assumption that Washington underwrites the Gulf price floor. The SPR figure is the harder constraint: a depleted reserve removes the instrument that made US escalation in the Gulf economically survivable, exactly the kind of capability loss that changes an adversary's read of resolve.",
+      "url": "https://www.csis.org/analysis/iran-war-six-months-energy-markets-and-national-security"
     },
     {
       "id": "6cfe2836b262dc98",
@@ -128,7 +143,8 @@
       "headline": "Russian strike on an ammunition depot near Kyiv kills 37, most of them care-home residents",
       "source": "NPR / KUNC",
       "brief": "A warehouse in Myla, Bucha district, storing ammunition and drone components detonated after being struck, killing at least 37 — 34 of them residents of an adjacent care facility for elderly and disabled people — and damaging some 50 residential buildings. Zelensky called it terrible negligence by those who stored explosives next to people; criminal proceedings were opened and two state arms-company officials held accountable for illegal on-site storage. Russia said it hit a store of components and boosters for long-range drones and claimed 313 Ukrainian drones downed overnight.",
-      "w": "The Ukrainian response is the notable part: rather than contest the target's status, Kyiv opened criminal proceedings against its own arms officials for co-locating munitions with a protected facility — an implicit concession on the distinction and precaution obligations that bind the defender as well as the attacker. Dispersed civilian-adjacent storage is a predictable byproduct of scaling toward 1,000 long-range strikes a day, and this is the cost curve of that industrialisation."
+      "w": "The Ukrainian response is the notable part: rather than contest the target's status, Kyiv opened criminal proceedings against its own arms officials for co-locating munitions with a protected facility — an implicit concession on the distinction and precaution obligations that bind the defender as well as the attacker. Dispersed civilian-adjacent storage is a predictable byproduct of scaling toward 1,000 long-range strikes a day, and this is the cost curve of that industrialisation.",
+      "url": "https://www.kunc.org/npr-news/2026-08-29/russian-strike-near-kyiv-kills-37-in-one-of-the-years-deadliest-attacks"
     },
     {
       "id": "50ad4624ff0a32ed",
@@ -136,7 +152,8 @@
       "headline": "Ukraine downs 200-plus drones in a third straight day of alerts; Kyiv says Russia drafted a northern offensive plan",
       "source": "Kyiv Independent",
       "brief": "Deputy head of the Presidential Office Pavlo Palisa told a closed briefing on August 28 that Russia's military leadership was tasked with preparing operational scenarios for an offensive in northern Ukraine, naming Kyiv and Chernihiv, information he said was verified across multiple intelligence sources. He stressed no new offensive groupings are currently detected on those axes. Ukraine separately reported downing more than 200 drones as rare multi-day air-raid alerts ran into a third morning.",
-      "w": "Planning documents are not force posture, and Palisa's own caveat — no new groupings observed — is the load-bearing clause; the disclosure functions as pre-emptive signalling to Western capitals as much as warning to Moscow. The indicator to watch is Belarusian infrastructure at Gomel and rear-area logistics, not staff studies, which every general staff produces for contingencies it has no intention of executing."
+      "w": "Planning documents are not force posture, and Palisa's own caveat — no new groupings observed — is the load-bearing clause; the disclosure functions as pre-emptive signalling to Western capitals as much as warning to Moscow. The indicator to watch is Belarusian infrastructure at Gomel and rear-area logistics, not staff studies, which every general staff produces for contingencies it has no intention of executing.",
+      "url": "https://kyivindependent.com/russia-planning-operation-in-northern-ukraine-including-kyiv-military-says/"
     },
     {
       "id": "b7d726e7762d2e7d",
@@ -144,7 +161,8 @@
       "headline": "ISW: Ukrainian strike damages a Tu-95 at Engels-2 as Russian budget strain hits operations",
       "source": "ISW via Kyiv Post",
       "brief": "ISW assesses Ukraine struck a Russian strategic bomber at Engels-2 airbase in Saratov Oblast, demonstrating reach against hardened rear targets, alongside continued strikes on Russian refineries. It judges that budgetary strain is producing concrete operational problems, and that the Russian MoD is expected to expand access to citizens' personal and medical data ahead of anticipated involuntary reserve mobilisation after the September 20 State Duma elections. Russia launched 164 drones overnight and conducted an ICBM test as nuclear signalling.",
-      "w": "Sequencing mobilisation measures after the Duma vote is the tell — the Kremlin is still paying an electoral-legitimacy premium it could theoretically ignore, which bounds how fast it can convert manpower reserves into fielded units. Striking the platforms that launch cruise missiles rather than intercepting the missiles is the cheaper side of the cost-exchange ratio, and the only lever Ukraine controls unilaterally as interceptor supply tightens."
+      "w": "Sequencing mobilisation measures after the Duma vote is the tell — the Kremlin is still paying an electoral-legitimacy premium it could theoretically ignore, which bounds how fast it can convert manpower reserves into fielded units. Striking the platforms that launch cruise missiles rather than intercepting the missiles is the cheaper side of the cost-exchange ratio, and the only lever Ukraine controls unilaterally as interceptor supply tightens.",
+      "url": "https://www.kyivpost.com/post/83304"
     },
     {
       "id": "271c2ed45cd35b16",
@@ -152,7 +170,8 @@
       "headline": "US Patriot interceptor stocks in Europe described as beyond critical; Pentagon and NATO deny it",
       "source": "AP via Spectrum News",
       "brief": "Defence officials say roughly 65% of US Patriot stocks — about 1,500 of 2,330 interceptors — were expended during the Iran war, with one official saying forces would have very limited capability against even a single ballistic missile strike. Production runs near 600 missiles a year against a 2030 target of 2,000; NATO's first European production facility is due to open in Germany in September with deliveries possibly from early 2027. Pentagon spokesman Sean Parnell called the shortage claims false and NATO's Col. Martin O'Donnell said it is simply not the case.",
-      "w": "This is the magazine-depth problem deterrence theory usually assumes away: extended deterrence in Europe rests on an inventory that a single regional war consumed two-thirds of, with a replacement cycle measured in years. The public denial from both Pentagon and NATO spokesmen is itself strategically necessary — an adversary's belief about interceptor stocks is the variable that matters, which is exactly why the leak is consequential regardless of who is right."
+      "w": "This is the magazine-depth problem deterrence theory usually assumes away: extended deterrence in Europe rests on an inventory that a single regional war consumed two-thirds of, with a replacement cycle measured in years. The public denial from both Pentagon and NATO spokesmen is itself strategically necessary — an adversary's belief about interceptor stocks is the variable that matters, which is exactly why the leak is consequential regardless of who is right.",
+      "url": "https://spectrumlocalnews.com/nc/triangle-sandhills/international/2026/08/27/u-s--patriot-missile-stocks-in-europe-beyond-critical-iran-war"
     },
     {
       "id": "358226c224c7007e",
@@ -160,7 +179,8 @@
       "headline": "Chad says a Sudanese air strike on a border fuel market killed 12",
       "source": "Al Jazeera",
       "brief": "A Chadian security source said the strike hit a fuel market used by the RSF to refuel, killing 12 and wounding seven. Sudan's foreign ministry expressed surprise and said its forces are performing their constitutional duty to protect Sudan's sovereignty while respecting neighbours' territory. The US embassy in Khartoum condemned the strikes. The incident follows an alleged Sudanese strike on a Chadian military convoy the previous week; Chad hosts roughly 900,000 Sudanese refugees.",
-      "w": "Two cross-border strikes in a week moves this from spillover to a pattern of SAF asserting a right of hot pursuit against RSF logistics inside a neighbouring state — the precedent that turns a civil war regional. Chad's dilemma is structural: it cannot interdict RSF resupply through its own territory without confronting the Zaghawa cross-border networks its own regime rests on, which is why deterrence by protest is all N'Djamena has."
+      "w": "Two cross-border strikes in a week moves this from spillover to a pattern of SAF asserting a right of hot pursuit against RSF logistics inside a neighbouring state — the precedent that turns a civil war regional. Chad's dilemma is structural: it cannot interdict RSF resupply through its own territory without confronting the Zaghawa cross-border networks its own regime rests on, which is why deterrence by protest is all N'Djamena has.",
+      "url": "https://www.aljazeera.com/news/2026/8/28/chad-accuses-sudan-of-deadly-air-strike-near-shared-border"
     },
     {
       "id": "d2ef4c45018cd638",
@@ -168,7 +188,8 @@
       "headline": "Board of Peace envoy Mladenov warns the Gaza ceasefire risks collapse",
       "source": "Al Jazeera",
       "brief": "Mladenov said both sides' failure to follow the roadmap threatens a collapse of the ceasefire and that a return to war would be devastating. Since the October 2025 ceasefire, Gaza's health ministry counts 1,303 Palestinians killed and 4,336 wounded, against a cumulative 73,438 killed since October 2023. Morocco agreed to join the International Stabilization Force while Turkey withdrew after an Israeli veto; the Board has secured $7 billion in reconstruction pledges. Hamas accepted the 15-point roadmap agreed July 31; Netanyahu publicly rejected it.",
-      "w": "An ISF whose composition is subject to an Israeli veto cannot generate the impartiality that makes a stabilisation force credible to the population it polices, and Turkey's exit removes the one contributor with leverage over Hamas. With $7 billion pledged against a mediator publicly warning of collapse, reconstruction money becomes a hostage to the security architecture rather than a stabiliser of it — the standard failure mode of sequenced peace implementation."
+      "w": "An ISF whose composition is subject to an Israeli veto cannot generate the impartiality that makes a stabilisation force credible to the population it polices, and Turkey's exit removes the one contributor with leverage over Hamas. With $7 billion pledged against a mediator publicly warning of collapse, reconstruction money becomes a hostage to the security architecture rather than a stabiliser of it — the standard failure mode of sequenced peace implementation.",
+      "url": "https://www.aljazeera.com/news/2026/8/28/board-of-peace-envoy-mladenov-warns-gaza-ceasefire-risks-collapse"
     },
     {
       "id": "add1e7ab3c9340d2",
@@ -176,7 +197,8 @@
       "headline": "Hezbollah's Qassem again rejects the US-backed Lebanon-Israel framework",
       "source": "Times of Israel",
       "brief": "In a televised address Saturday, Hezbollah secretary-general Naim Qassem called the framework agreement illegitimate, unlawful, humiliating and destructive to Lebanese sovereignty, saying the group will not surrender. Israeli forces hold roughly 2,000 sq km of southern Lebanon following the Iran war, and Israeli strikes have continued in the Nabatieh district.",
-      "w": "Lebanon's government cannot deliver disarmament it lacks the coercive capacity to impose, so the framework's viability depends entirely on Hezbollah's own calculus — which a public no-surrender position now makes costly to reverse. Israeli occupation of southern territory is meanwhile the argument Hezbollah needs to justify retaining arms, making withdrawal and disarmament a mutual-first-move problem no mediator has solved."
+      "w": "Lebanon's government cannot deliver disarmament it lacks the coercive capacity to impose, so the framework's viability depends entirely on Hezbollah's own calculus — which a public no-surrender position now makes costly to reverse. Israeli occupation of southern territory is meanwhile the argument Hezbollah needs to justify retaining arms, making withdrawal and disarmament a mutual-first-move problem no mediator has solved.",
+      "url": "https://www.timesofisrael.com/liveblog-august-29-2026/"
     },
     {
       "id": "6c51d3593c2f5f3f",
@@ -184,7 +206,8 @@
       "headline": "IRGC asserts control of the Strait as the US maintains its naval blockade",
       "source": "Al Jazeera",
       "brief": "The IRGC said it retains control of the Strait of Hormuz and accused US leadership of false statements about passage conditions in order to move energy prices. Iranian officials said Tehran will stand firm against sanctions and rely equally on diplomacy and defence. Iran's stated conditions for reopening the Strait are that the US lift its port blockade, pay compensation, and remove sanctions.",
-      "w": "Both sides now have an incentive to overstate their control of transit — Tehran to preserve coercive leverage, Washington to calm markets — which makes shipping data rather than statements the only reliable indicator. Iran's demand for compensation as a precondition converts a military standoff into a claims-settlement negotiation, a framing that has historically required a third-party tribunal and years, not a summit."
+      "w": "Both sides now have an incentive to overstate their control of transit — Tehran to preserve coercive leverage, Washington to calm markets — which makes shipping data rather than statements the only reliable indicator. Iran's demand for compensation as a precondition converts a military standoff into a claims-settlement negotiation, a framing that has historically required a third-party tribunal and years, not a summit.",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/29/iran-war-live-irgc-asserts-strait-control-us-enforces-blockade"
     },
     {
       "id": "a35e6283361960f6",
@@ -192,7 +215,8 @@
       "headline": "Warsh's first Jackson Hole keynote puts a rate *hike* back on the table",
       "source": "Federal Reserve Board",
       "brief": "Chairman Kevin Warsh told the Kansas City Fed symposium that inflation is running above the 2 percent target, citing PCE at 3.7% over 12 months and 4.1% annualized over six, with 49% of the PCE basket running above 3% annualized. He said the Fed must be confident underlying inflation is moving to its objective clearly and at sufficient speed, and pinned 65 months of sustained elevated inflation on the central bank. He also signalled a retreat from forward guidance and dot-plot-style projections, and announced task forces on AI's productivity and labor-market effects.",
-      "w": "An institutional regime change, not just a hawkish data read: killing forward guidance removes the Fed's principal non-balance-sheet instrument of the last two decades and shifts expectation formation back onto markets, raising term premia and the option value of duration hedging. The explicit self-blame for 65 months of overshoot is credibility-rebuilding in the Kydland-Prescott sense — a chair buying commitment technology by pledging his own reputation to disinflation before he has hiked once."
+      "w": "An institutional regime change, not just a hawkish data read: killing forward guidance removes the Fed's principal non-balance-sheet instrument of the last two decades and shifts expectation formation back onto markets, raising term premia and the option value of duration hedging. The explicit self-blame for 65 months of overshoot is credibility-rebuilding in the Kydland-Prescott sense — a chair buying commitment technology by pledging his own reputation to disinflation before he has hiked once.",
+      "url": "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm"
     },
     {
       "id": "93c5923cb56a6d7e",
@@ -200,7 +224,8 @@
       "headline": "September hike odds jump to roughly 57% as the curve bear-flattens",
       "source": "Yahoo Finance",
       "brief": "The S&P 500 closed at 7,711.76 (-0.25%), the Dow at 53,559.99 (-0.02%) and the Nasdaq at 26,402.42 (-0.52%), though all three finished the week higher. Traders lifted the probability of a September 15-16 hike to roughly 57% from 35% the prior day. The 2-year Treasury yield jumped about 8bp while the 10-year rose 4bp to 4.72%. PayPal fell 12% after Stripe and Advent walked away from a $50bn bid.",
-      "w": "A bear flattener off a hawkish chair is the market saying it believes the front-end story but not the terminal-inflation story — the long end is pricing that hikes will work, which is precisely the credibility Warsh is buying. Watch whether it holds: if long yields start rising with the front end, the market is repricing fiscal and term-premium risk rather than the reaction function, and that is the scenario that breaks equity multiples."
+      "w": "A bear flattener off a hawkish chair is the market saying it believes the front-end story but not the terminal-inflation story — the long end is pricing that hikes will work, which is precisely the credibility Warsh is buying. Watch whether it holds: if long yields start rising with the front end, the market is repricing fiscal and term-premium risk rather than the reaction function, and that is the scenario that breaks equity multiples.",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-28-dow-sp-500-nasdaq-dip-fed-warsh-jackson-hole-speech-081514091.html"
     },
     {
       "id": "c146e04d892d9169",
@@ -208,7 +233,8 @@
       "headline": "July PCE holds at 3.7%, and the September FOMC will meet without a fresh print",
       "source": "Bureau of Economic Analysis",
       "brief": "BEA's Personal Income and Outlays release put headline PCE at +3.7% year over year in July, unchanged from June, after 4.1% in May and 3.8% in April. Core rose 3.3% annually. The next release is scheduled for September 30 — after the September 15-16 FOMC meeting.",
-      "w": "The committee will decide on stale inflation data and fresh labor data, an asymmetry that mechanically raises the weight of payrolls in the reaction function. The plateau at 3.7% rather than a downtrend is what lets Warsh argue disinflation has stalled rather than merely slowed, which is the analytical predicate for a hike rather than a hold."
+      "w": "The committee will decide on stale inflation data and fresh labor data, an asymmetry that mechanically raises the weight of payrolls in the reaction function. The plateau at 3.7% rather than a downtrend is what lets Warsh argue disinflation has stalled rather than merely slowed, which is the analytical predicate for a hike rather than a hold.",
+      "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
     },
     {
       "id": "536a4b7b9fd9d899",
@@ -216,7 +242,8 @@
       "headline": "Tokyo core-core CPI hits 2.0%, hardening the case for a September BOJ hike",
       "source": "InvestingLive",
       "brief": "Tokyo headline CPI came in at 1.9% year on year, core at 1.8% (above the 1.7% consensus), and core-core — the BOJ's preferred underlying gauge — at 2.0%, up from 1.8% in July. Wholesale inflation had already jumped to 7.2% in July, pointing to further pass-through. Markets read the data as supporting a hike at the September 17-18 meeting.",
-      "w": "A BOJ hike into a hawkish Fed is the rare configuration where both legs of the carry trade tighten at once, and a poorly received two-year JGB auction suggests Japanese domestic demand for duration is thinning just as the anchor leg unwinds. The second-order risk is not the yen but forced repatriation flows out of US and European credit — how a domestic Japanese print becomes a global term-premium event."
+      "w": "A BOJ hike into a hawkish Fed is the rare configuration where both legs of the carry trade tighten at once, and a poorly received two-year JGB auction suggests Japanese domestic demand for duration is thinning just as the anchor leg unwinds. The second-order risk is not the yen but forced repatriation flows out of US and European credit — how a domestic Japanese print becomes a global term-premium event.",
+      "url": "https://investinglive.com/news/tokyo-inflation-data-strengthens-case-for-september-boj-hike/"
     },
     {
       "id": "c8d52edeaee28854",
@@ -224,7 +251,8 @@
       "headline": "Canada's dollar-for-dollar retaliation lands September 8",
       "source": "Al Jazeera",
       "brief": "After talks collapsed, Prime Minister Mark Carney said Canada will impose retaliatory duties from September 8 on US steel, dairy, appliances, agricultural equipment, pulp and paper, and electronics, matching Washington dollar for dollar. The US 50% levy covers roughly $20bn of Canadian exports, about 5.5% of the total. Carney cited US demands to constrain Canada's ability to negotiate independent trade deals, plus objections touching French-language and Quebec cultural protections.",
-      "w": "The sticking point Carney named — US demands limiting Canada's freedom to sign third-party trade deals — is the substantive escalation, because it converts a tariff dispute into a sovereignty-over-trade-policy dispute and forecloses the usual quota-for-tariff off-ramp. The Defence Production Sharing Agreement has historically survived trade fights; a rupture reaching procurement carve-outs would be genuinely unprecedented."
+      "w": "The sticking point Carney named — US demands limiting Canada's freedom to sign third-party trade deals — is the substantive escalation, because it converts a tariff dispute into a sovereignty-over-trade-policy dispute and forecloses the usual quota-for-tariff off-ramp. The Defence Production Sharing Agreement has historically survived trade fights; a rupture reaching procurement carve-outs would be genuinely unprecedented.",
+      "url": "https://www.aljazeera.com/news/2026/8/23/canada-to-hit-us-with-retaliatory-tariffs-as-trade-war-escalates"
     },
     {
       "id": "d60f6e6822a870ed",
@@ -232,7 +260,8 @@
       "headline": "Gold near $4,461 and Brent around $90 as hard assets absorb the policy uncertainty",
       "source": "Fortune",
       "brief": "Brent traded at $90.55 a barrel on the morning of August 28, up 87 cents on the day and up $22.34 (32.8%) from $68.21 a year earlier, before easing toward $88.88 later in the session. Gold was quoted at $4,461/oz (+1.78%) and silver at $65.59, with the US 10-year at 4.67% and EUR/USD at 1.1523. German import prices ran at 7.2% year on year.",
-      "w": "A 33% year-on-year crude gain alongside sticky 3.7% PCE is the supply-side half of the inflation problem that rate hikes cannot reach — the bind that makes Warsh's disinflation timeline credible only if energy cooperates. Gold above $4,400 with real yields positive says the bid is reserve diversification and fiscal-risk hedging rather than a rates trade."
+      "w": "A 33% year-on-year crude gain alongside sticky 3.7% PCE is the supply-side half of the inflation problem that rate hikes cannot reach — the bind that makes Warsh's disinflation timeline credible only if energy cooperates. Gold above $4,400 with real yields positive says the bid is reserve diversification and fiscal-risk hedging rather than a rates trade.",
+      "url": "https://fortune.com/article/price-of-oil-08-28-2026/"
     },
     {
       "id": "0128b639188f88ae",
@@ -240,7 +269,8 @@
       "headline": "UK business confidence at a five-month high while pricing intentions hit a 2022 low",
       "source": "Tickmill",
       "brief": "The Lloyds Business Barometer rose to 53% in August, its highest since March, while the share of UK firms planning price increases fell to 51%, the lowest since 2022. Ahead of Warsh's speech, US 2-year yields sat near 4.23% and money markets still priced a final 25bp cut before year-end; Kansas City Fed President Jeff Schmid said current policy is not actively restraining economic activity.",
-      "w": "Confidence up with pricing intentions down is the textbook signature of genuine supply-side improvement rather than demand-led disinflation — the combination the BoE has been waiting for to cut without second-round wage risk. Note the pre-speech pricing of a cut: a 34-percentage-point swing in September hike odds within one session shows how thin conviction behind G10 rate expectations had become."
+      "w": "Confidence up with pricing intentions down is the textbook signature of genuine supply-side improvement rather than demand-led disinflation — the combination the BoE has been waiting for to cut without second-round wage risk. Note the pre-speech pricing of a cut: a 34-percentage-point swing in September hike odds within one session shows how thin conviction behind G10 rate expectations had become.",
+      "url": "https://www.tickmill.com/blog/daily-market-outlook-august-28-2026"
     },
     {
       "id": "39bef03bfaabb7d2",
@@ -248,7 +278,8 @@
       "headline": "Russia's war finances buckle: treasury account at minus 5.5tn rubles, non-military spending cut 35%",
       "source": "Defense News",
       "brief": "Russia's federal treasury account stood at roughly minus 5.5 trillion rubles ($65.3bn) as of April 2026, with the January-April federal deficit at 5.8-5.9 trillion rubles, or 2.5% of GDP — nearly double the prior year. Military and security overruns run 2-4 trillion rubles a year, and debt service has reached about 4 trillion rubles, 9% of the federal budget. Finance Minister Anton Siluanov reportedly warned leadership, triggering a 35% cut to non-military spending and a planned 15% reduction in federal staffing.",
-      "w": "Cutting civilian spending 35% while protecting defense outlays is the classic war-economy allocation choice that destroys economic complexity in the Hausmann-Hidalgo sense, starving the non-military capability network that supplies engineering talent and dual-use inputs back into the defense sector itself. Debt service at 9% of the budget on a domestic-only funding base means the binding constraint is now Russian bank appetite for OFZ issuance, not oil revenue — a fiscal ceiling far nearer than headline reserves imply."
+      "w": "Cutting civilian spending 35% while protecting defense outlays is the classic war-economy allocation choice that destroys economic complexity in the Hausmann-Hidalgo sense, starving the non-military capability network that supplies engineering talent and dual-use inputs back into the defense sector itself. Debt service at 9% of the budget on a domestic-only funding base means the binding constraint is now Russian bank appetite for OFZ issuance, not oil revenue — a fiscal ceiling far nearer than headline reserves imply.",
+      "url": "https://www.defensenews.com/global/europe/2026/08/28/russia-is-running-out-of-cash-due-to-its-war-in-ukraine-report/"
     },
     {
       "id": "08a297f52c797678",
@@ -256,7 +287,8 @@
       "headline": "Air Force awards Boeing a $131.23bn-ceiling sole-source IDIQ for the F-15 through 2037",
       "source": "Defense News",
       "brief": "The F-15 Eagle Crest contract covers new production, upgrades, retrofits, sustainment and depot support for the Air Force, Air National Guard and foreign buyers, with orders through August 2031 extendable to 2036 and performance to 2037. Only $343,740 in FY26 R&D funds were obligated at award, with no aircraft ordered. Named FMS customers include Japan, Israel, Saudi Arabia, South Korea, Singapore, Indonesia and Poland — Indonesia and Poland do not currently operate the type. The US F-15EX buy has grown to 268 aircraft through FY31 from a 98-aircraft baseline.",
-      "w": "The structural story is the organic depot clause: standing up government heavy-overhaul capability inside a sole-source vehicle is the Air Force buying back sustainment leverage it lost on F-35, and it is the most consequential precedent here for future fighter contracting. Naming Poland and Indonesia inside the vehicle is a forward-leaning bet — for Warsaw a third fast-jet fleet reads less like a capability requirement than a hedge against F-35 availability and data-sovereignty constraints."
+      "w": "The structural story is the organic depot clause: standing up government heavy-overhaul capability inside a sole-source vehicle is the Air Force buying back sustainment leverage it lost on F-35, and it is the most consequential precedent here for future fighter contracting. Naming Poland and Indonesia inside the vehicle is a forward-leaning bet — for Warsaw a third fast-jet fleet reads less like a capability requirement than a hedge against F-35 availability and data-sovereignty constraints.",
+      "url": "https://www.defensenews.com/news/your-military/2026/08/28/air-force-awards-boeing-131-billion-ceiling-contract-for-f-15-production-modernization/"
     },
     {
       "id": "fe4e8e0ae696335c",
@@ -264,7 +296,8 @@
       "headline": "Pentagon FY27 acquisition report puts F-35 program cost at $536.2bn, up $51bn",
       "source": "Defence Industry Europe",
       "brief": "The Modernized Selected Acquisition Report for FY2027 raised total program acquisition cost to $536.2bn from $485.2bn in 2023 — a 10.5% increase comprising +$19bn RDT&E and +$32bn procurement, with development now totalling $106.6bn. Unit recurring flyaway costs in 2012 constant dollars rose to $78.0m for the F-35A (+7.3%), $93.4m for the F-35C (+6.6%) and $110.3m for the F-35B (+10.5%). Drivers include roughly $900m of Block 4 refinements, APG-85 radar production and the Power and Thermal Management Upgrade.",
-      "w": "Unit cost rising in constant dollars means this is real cost growth, not inflation accounting — the learning curve has inverted, and Block 4's compute-and-cooling debt is why. For European customers it sharpens the ITAR-free calculus: every dollar of PTMU and Block 4 growth buys capability whose configuration control sits in Fort Worth, precisely the dependency GCAP and FCAS were chartered to escape."
+      "w": "Unit cost rising in constant dollars means this is real cost growth, not inflation accounting — the learning curve has inverted, and Block 4's compute-and-cooling debt is why. For European customers it sharpens the ITAR-free calculus: every dollar of PTMU and Block 4 growth buys capability whose configuration control sits in Fort Worth, precisely the dependency GCAP and FCAS were chartered to escape.",
+      "url": "https://defence-industry.eu/pentagon-report-shows-f-35-unit-production-costs-rising-across-all-three-variants-amid-modernization-and-inflation-pressures/"
     },
     {
       "id": "b3c2e6f40ca51893",
@@ -272,7 +305,8 @@
       "headline": "Aug 28 contract awards: GE $319.5m for J85 engines, BAE $167.5m for Mk 41 VLS design agency",
       "source": "U.S. Department of War",
       "brief": "General Electric received a $319,548,644 Defense Logistics Agency modification for J85 engine supplies running to December 2028. BAE Systems Land & Armaments took a $167,496,594 cost-plus-fixed-fee Navy modification for Mk 41 Vertical Launching System Mechanical Design Agent support — options potentially worth $343.3m — performed across Minneapolis, Norfolk, San Diego, Aberdeen, Bath, Pascagoula and Poland. Symetrics Industries won $147,310,777 from the Air Force for ALE-47 countermeasure dispenser production through August 2032, including FMS.",
-      "w": "The Poland line on the Mk 41 design-agent contract is the detail worth tracking — the industrial signature of Warsaw's Aegis Ashore and frigate programs pulling US launcher engineering into the Polish supply chain, a slow accretion of allied VLS competence that is a prerequisite for any credible European strike-missile magazine. The ALE-47 award running to 2032 is a reminder that expendables and dispensers, not airframes, are the throughput constraint on allied EW readiness."
+      "w": "The Poland line on the Mk 41 design-agent contract is the detail worth tracking — the industrial signature of Warsaw's Aegis Ashore and frigate programs pulling US launcher engineering into the Polish supply chain, a slow accretion of allied VLS competence that is a prerequisite for any credible European strike-missile magazine. The ALE-47 award running to 2032 is a reminder that expendables and dispensers, not airframes, are the throughput constraint on allied EW readiness.",
+      "url": "https://www.war.gov/News/Contracts/Contract/Article/4585867/contracts-for-aug-28-2026/"
     },
     {
       "id": "73527858529ba89d",
@@ -280,7 +314,8 @@
       "headline": "Federal Register: Poland's $1.77bn JASSM-ER case amended to add inert test rounds",
       "source": "Federal Register",
       "brief": "Transmittal 0F-26 amends Poland's original case — up to 821 AGM-158B-2 JASSM-Extended Range missiles — to add up to five inert AGM-158 JASSMs with test instrumentation kits worth about $21m, with the total case value unchanged at $1.77bn. The additions support Poland's F-16 Viper configuration upgrade and flight test program.",
-      "w": "An 821-round JASSM-ER buy gives Poland the largest non-US deep-strike magazine in NATO Europe, and the inert instrumented rounds signal Warsaw is running its own integration test campaign rather than accepting a US-certified configuration wholesale — a meaningful step toward national release authority over employment. The zero-value amendment structure is also the mechanism to watch: it lets scope migrate inside an already-notified case without a fresh congressional review clock."
+      "w": "An 821-round JASSM-ER buy gives Poland the largest non-US deep-strike magazine in NATO Europe, and the inert instrumented rounds signal Warsaw is running its own integration test campaign rather than accepting a US-certified configuration wholesale — a meaningful step toward national release authority over employment. The zero-value amendment structure is also the mechanism to watch: it lets scope migrate inside an already-notified case without a fresh congressional review clock.",
+      "url": "https://www.federalregister.gov/documents/2026/08/28/2026-17568/arms-sales-notification"
     },
     {
       "id": "9dd9b2ec5ead5454",
@@ -288,7 +323,8 @@
       "headline": "MDA backs X-Bow's $11m Buckler bid for a sub-$750k interceptor",
       "source": "Defense News",
       "brief": "The Missile Defense Agency awarded New Mexico-based X-Bow Systems roughly $11m in Phase 2 of its Low-Cost Interceptor effort, requiring a flight-demonstration prototype by late 2027. Buckler is designed to defeat Group 3 drones at supersonic speeds, targeting under $750,000 per shot — about one-fifth the roughly $3.9m cost of a Patriot round. X-Bow will 3D-print its solid rocket motors and propellant in-house. CEO Jason Hundley said America cannot out-produce today's threats with yesterday's supplier base.",
-      "w": "The binding constraint on Western air defense is not interceptor design but solid rocket motor capacity, an oligopoly of essentially two US suppliers — additively manufactured SRMs are the only credible route to breaking that bottleneck without a decade of energetics plant construction. If Buckler works, the cost-exchange ratio against Shahed-class drones inverts from catastrophic to favorable, which determines whether magazine depth or magazine economics limits a protracted air-defense campaign."
+      "w": "The binding constraint on Western air defense is not interceptor design but solid rocket motor capacity, an oligopoly of essentially two US suppliers — additively manufactured SRMs are the only credible route to breaking that bottleneck without a decade of energetics plant construction. If Buckler works, the cost-exchange ratio against Shahed-class drones inverts from catastrophic to favorable, which determines whether magazine depth or magazine economics limits a protracted air-defense campaign.",
+      "url": "https://www.defensenews.com/pentagon/2026/08/27/pentagon-awards-contract-in-race-to-field-cheaper-interceptors-missiles/"
     },
     {
       "id": "d65c1b96a995aa8d",
@@ -296,7 +332,8 @@
       "headline": "DoD asks industry for software-only post-quantum crypto that touches no hardware",
       "source": "DefenseScoop",
       "brief": "A new RFI seeks interim cryptographic solutions implemented purely in software, with responses due September 27, 2026. Requirements include packet-level cryptographic protection and full DoD sovereignty over keys, under an explicit constraint that the solution must not require replacement, modification or augmentation of existing hardware. The phased timeline requires all systems to support PQC by December 31, 2029, be PQC-capable by 2030, and use PQC by 2031.",
-      "w": "The no-hardware-change constraint is a tacit admission that the installed base of Type 1 crypto — the KG/KIV family embedded in Link 16 terminals, SATURN radios and datalink gateways — cannot be recapitalized on a 2031 timeline at any plausible budget. Pushing packet-level crypto into software is a serious break from NSA's hardware root-of-trust model, and it forces a parallel conversation with NATO partners whose ESSOR and national waveform stacks assume hardware-anchored key management for interoperability certification."
+      "w": "The no-hardware-change constraint is a tacit admission that the installed base of Type 1 crypto — the KG/KIV family embedded in Link 16 terminals, SATURN radios and datalink gateways — cannot be recapitalized on a 2031 timeline at any plausible budget. Pushing packet-level crypto into software is a serious break from NSA's hardware root-of-trust model, and it forces a parallel conversation with NATO partners whose ESSOR and national waveform stacks assume hardware-anchored key management for interoperability certification.",
+      "url": "https://defensescoop.com/2026/08/28/dod-software-defined-encryption-quantum/"
     },
     {
       "id": "4771880ce0d6adea",
@@ -304,7 +341,8 @@
       "headline": "AMP-HEL laser downs three cartel drones on the southern border",
       "source": "DefenseScoop",
       "brief": "Joint Task Force-Southern Border used AeroVironment's Army Multipurpose High Energy Laser to defeat three unmanned aircraft over two days. Maj. Gen. Curtis Taylor said cartel networks are increasingly employing UAS to facilitate smuggling and spy on personnel. The deployment follows a Pentagon-FAA safety agreement signed in April authorizing use of the laser in national airspace, after February and March incidents where uncoordinated engagements temporarily closed airspace.",
-      "w": "The FAA agreement, not the laser, is the precedent — it establishes a domestic regulatory pathway for kinetic-equivalent counter-UAS effects in the national airspace system, the exact legal bottleneck European states face with their own base-protection deployments. Expect it cited in NATO counter-drone workstreams as evidence that airspace deconfliction is solvable administratively rather than technically."
+      "w": "The FAA agreement, not the laser, is the precedent — it establishes a domestic regulatory pathway for kinetic-equivalent counter-UAS effects in the national airspace system, the exact legal bottleneck European states face with their own base-protection deployments. Expect it cited in NATO counter-drone workstreams as evidence that airspace deconfliction is solvable administratively rather than technically.",
+      "url": "https://defensescoop.com/2026/08/28/border-task-force-shoots-down-cartel-linked-drones-with-av-laser/"
     },
     {
       "id": "e19f654ac1d59a11",
@@ -312,7 +350,8 @@
       "headline": "India signs a Javelin Letter of Offer and Acceptance, opening co-production talks",
       "source": "Defence Industry Europe",
       "brief": "India signed an LoA for the Javelin anti-tank guided missile under US Foreign Military Sales, becoming a new customer for the RTX-Lockheed Martin Javelin Joint Venture; quantity and value were not disclosed. US Ambassador Sergio Gor said the agreement demonstrates the depth of US support for the Indian Army, and both sides indicated it opens discussions on co-production and mutually beneficial opportunities for US and Indian industry.",
-      "w": "Javelin co-production is the hardest ITAR test case in the India relationship, because the seeker and its focal plane array sit at the technology-release boundary that has repeatedly stalled US-India transfers — an LoA without a released technical data package is a purchase, not a partnership. Watch whether New Delhi accepts screwdriver assembly or holds out for seeker-level work; that answer tells you whether India is buying capability or buying industrial complexity."
+      "w": "Javelin co-production is the hardest ITAR test case in the India relationship, because the seeker and its focal plane array sit at the technology-release boundary that has repeatedly stalled US-India transfers — an LoA without a released technical data package is a purchase, not a partnership. Watch whether New Delhi accepts screwdriver assembly or holds out for seeker-level work; that answer tells you whether India is buying capability or buying industrial complexity.",
+      "url": "https://defence-industry.eu/india-signs-javelin-missile-purchase-agreement-with-u-s-opening-future-co-production-talks-and-deeper-defense-industry-ties/"
     },
     {
       "id": "898d2545222af6c8",
@@ -320,7 +359,8 @@
       "headline": "Judge rules the administration cannot revoke visas or deport students over pro-Palestinian advocacy",
       "source": "Reuters via West Hawaii Today",
       "brief": "U.S. District Judge Noel Wise in San Jose held unconstitutional the use of two Immigration and Nationality Act provisions — the Secretary of State's authority to revoke visas over conduct compromising a compelling foreign policy interest, and the associated deportability finding — as applied to noncitizen students engaged in pro-Palestinian advocacy. Wise found First and Fifth Amendment violations, holding the government targeted speech by viewpoint. Plaintiffs included The Stanford Daily and affected students, among them Columbia graduate Mahmoud Khalil.",
-      "w": "The court treats a facially discretionary foreign-affairs delegation as constrained by the First Amendment even against noncitizens, narrowing the plenary-power space where executive immigration discretion has historically escaped viewpoint scrutiny. It is the third live matter — with Anthropic and Stars and Stripes — where courts are applying unconstitutional-retaliation doctrine to executive actions framed as national-security judgments, which is where deference doctrines usually do the most work."
+      "w": "The court treats a facially discretionary foreign-affairs delegation as constrained by the First Amendment even against noncitizens, narrowing the plenary-power space where executive immigration discretion has historically escaped viewpoint scrutiny. It is the third live matter — with Anthropic and Stars and Stripes — where courts are applying unconstitutional-retaliation doctrine to executive actions framed as national-security judgments, which is where deference doctrines usually do the most work.",
+      "url": "https://www.westhawaiitoday.com/2026/08/29/nation-world-news/judge-deals-blow-to-trump-moves-to-deport-pro-palestinian-activists/"
     },
     {
       "id": "6443331024fb4391",
@@ -328,7 +368,8 @@
       "headline": "Military judge suppresses Khalid Sheikh Mohammed's 2007 FBI confession",
       "source": "CBS News",
       "brief": "Lt. Col. Michael Schrama, presiding at the Guantanamo Bay military commission, ruled that statements Mohammed made to FBI agents over a four-day January 2007 interrogation were involuntary and inadmissible, citing prior CIA waterboarding, absence of Miranda warnings, and denial of counsel. The government said it would decide on an appeal shortly. Trial for Mohammed and three co-defendants remains scheduled for June 2028, with capital exposure.",
-      "w": "The clean-team theory — that post-CIA FBI re-interrogations could launder torture-tainted statements — has been the commissions' central evidentiary workaround for nearly two decades, and its rejection goes to whether the system can produce a conviction that survives review at all. It also sharpens the institutional comparison the 2024 plea deals were meant to avoid: an Article III alternative the executive declined to use."
+      "w": "The clean-team theory — that post-CIA FBI re-interrogations could launder torture-tainted statements — has been the commissions' central evidentiary workaround for nearly two decades, and its rejection goes to whether the system can produce a conviction that survives review at all. It also sharpens the institutional comparison the 2024 plea deals were meant to avoid: an Article III alternative the executive declined to use.",
+      "url": "https://www.cbsnews.com/news/judge-throws-out-confession-alleged-911-mastermind-khalid-sheikh-mohammad/"
     },
     {
       "id": "bd4c0cdb128d48ee",
@@ -336,7 +377,8 @@
       "headline": "DOJ appeals the order temporarily blocking the USPS mail-voting rule",
       "source": "Democracy Docket",
       "brief": "The Justice Department filed a notice of appeal Friday seeking to undo the 14-day TRO Judge Indira Talwani (D. Mass.) issued August 27 against USPS implementation of the president's mail-voting executive order. Talwani found compliance with the final rule impossible at this date and the order likely unconstitutional as an intrusion on state authority over elections. A parallel case before Judge Carl Nichols has a September 8 briefing deadline; Election Day is under 70 days out.",
-      "w": "The appeal sets up the classic Purcell squeeze — the closer to an election, the more courts resist changes, which cuts against the rule now but would cut against later judicial correction if a stay issues. The merits question is an Elections Clause and Article II allocation problem: whether a postal regulation can function as a federal qualification layer on top of state-run elections."
+      "w": "The appeal sets up the classic Purcell squeeze — the closer to an election, the more courts resist changes, which cuts against the rule now but would cut against later judicial correction if a stay issues. The merits question is an Elections Clause and Article II allocation problem: whether a postal regulation can function as a federal qualification layer on top of state-run elections.",
+      "url": "https://www.democracydocket.com/news-alerts/doj-appeals-court-order-temporarily-blocking-trumps-attack-on-mail-voting/"
     },
     {
       "id": "9e8fd53b7b7baa94",
@@ -344,7 +386,8 @@
       "headline": "Court blocks USPS from creating a federal approved-voter list for ballot delivery; hearing Sept. 3",
       "source": "ACLU",
       "brief": "In League of Women Voters of Massachusetts v. Trump, the district court barred USPS for 14 days from implementing sections of the finalized rule that would have created a federal approved voter list and directed the Postal Service to refuse delivery of ballots from voters not on it. The court wrote that the agency's interest in correcting an unsubstantiated problem through likely unconstitutional means is dwarfed by the overwhelming risk of pervasive disenfranchisement. The preliminary-injunction hearing is September 3, 2026.",
-      "w": "The mechanism is the story: a delivery agency conditioning carriage on a federal eligibility list converts a logistics monopoly into an election-administration checkpoint, a category shift rather than a degree change. It is the cleanest current example of a general-purpose government service being repurposed as a gate on a constitutionally state-assigned function."
+      "w": "The mechanism is the story: a delivery agency conditioning carriage on a federal eligibility list converts a logistics monopoly into an election-administration checkpoint, a category shift rather than a degree change. It is the cleanest current example of a general-purpose government service being repurposed as a gate on a constitutionally state-assigned function.",
+      "url": "https://www.aclu.org/press-releases/federal-court-grants-emergency-relief-blocking-usps-from-implementing-newly-finalized-mail-ballot-rule-for-november-election"
     },
     {
       "id": "35cb2039226697d1",
@@ -352,7 +395,8 @@
       "headline": "Judge declines, for now, to block the second birthright-citizenship executive order",
       "source": "Al Jazeera",
       "brief": "U.S. District Judge Deborah Boardman (D. Md.) rejected an immediate restraining order against the narrower August 6, 2026 executive order, directing the immigrant-rights coalition to address it in an amended complaint before she reconsiders. She said from the bench that as far as she can tell, this is unprecedented. The order would deny citizenship to children of parents deemed alien enemies or terrorists, to children of parents said to be engaging in commercial transactions to obtain birthright citizenship, and to people from territories lacking a federal citizenship statute, such as American Samoa.",
-      "w": "The narrowing is the point: carving categories tied to enemy-alien and fraud framings rather than a blanket redefinition tries to relitigate the Wong Kim Ark subject-to-the-jurisdiction clause on facts less obviously foreclosed by precedent, and forces plaintiffs into repeated re-pleading that resets the procedural clock each time."
+      "w": "The narrowing is the point: carving categories tied to enemy-alien and fraud framings rather than a blanket redefinition tries to relitigate the Wong Kim Ark subject-to-the-jurisdiction clause on facts less obviously foreclosed by precedent, and forces plaintiffs into repeated re-pleading that resets the procedural clock each time.",
+      "url": "https://www.aljazeera.com/news/2026/8/28/us-judge-denies-injunction-against-trumps-new-birthright-citizenship-order"
     },
     {
       "id": "f3fd0fca176b88eb",
@@ -360,7 +404,8 @@
       "headline": "Judge rejects Trump's third bid to move his New York conviction to federal court",
       "source": "CBS News",
       "brief": "U.S. District Judge Alvin K. Hellerstein in Manhattan denied removal of the state hush-money case to federal court and dismissal on presidential-immunity grounds, calling the arguments neither new nor legally sufficient and writing that paying hush money or engaging in a cover-up of an embarrassment are not subsumed in presidential immunity. He noted it was the third such attempt. Trump's team said it will appeal; the 2024 conviction on 34 felony counts is separately on appeal in state court.",
-      "w": "The federal-officer removal statute and Trump v. United States official-acts immunity are being used as a joint vehicle to federalize a state prosecution, and the repeated denials are building appellate record on where the official-acts boundary sits for pre-inauguration conduct. That boundary is the operative constraint on state criminal jurisdiction over a sitting president, which the 2024 opinion left substantially open."
+      "w": "The federal-officer removal statute and Trump v. United States official-acts immunity are being used as a joint vehicle to federalize a state prosecution, and the repeated denials are building appellate record on where the official-acts boundary sits for pre-inauguration conduct. That boundary is the operative constraint on state criminal jurisdiction over a sitting president, which the 2024 opinion left substantially open.",
+      "url": "https://www.cbsnews.com/news/trump-hush-money-immunity-bid-again-rejected/"
     },
     {
       "id": "b246d97586247de1",
@@ -368,7 +413,8 @@
       "headline": "Fired Stars and Stripes journalists sue Hegseth and Pentagon officials",
       "source": "CBS News",
       "brief": "Publisher Max Lederer, editor-in-chief Erik Slavin and reporter Lara Korte sued Defense Secretary Pete Hegseth, spokesman Sean Parnell and aide Andrew Brey in federal court in Washington, alleging First Amendment violations and unlawful retaliation. The firings followed a July CBS Sunday Morning segment in which Korte said she works for Stars and Stripes, not the Pentagon or any administration, and an August article on mental-health concerns and supply shortages aboard the USS Abraham Lincoln.",
-      "w": "Stars and Stripes occupies an unusual statutory position — editorially independent but DoD-funded — so the case tests whether Congress's structural guarantee of editorial independence creates enforceable limits on the Secretary's personnel authority, a Humphrey's-Executor-adjacent question in a non-adjudicatory setting."
+      "w": "Stars and Stripes occupies an unusual statutory position — editorially independent but DoD-funded — so the case tests whether Congress's structural guarantee of editorial independence creates enforceable limits on the Secretary's personnel authority, a Humphrey's-Executor-adjacent question in a non-adjudicatory setting.",
+      "url": "https://www.cbsnews.com/news/fired-stars-and-stripes-journalists-sue-hegseth-and-pentagon-spokesperson/"
     },
     {
       "id": "ec3126d6bd370413",
@@ -376,7 +422,8 @@
       "headline": "Nvidia's AI advantage is moving beyond the GPU",
       "source": "TechCrunch",
       "brief": "As data centers scale to gigawatt class, Nvidia's moat is shifting toward orchestration — the Vera Rubin architecture pairs GPUs with the Vera CPU, which handles data movement and memory management alongside storage and networking. Nvidia VP of storage technology Jason Hardy said the company saw upwards of 3x improvement in those operations. Competitors including Groq, with its LPX inference accelerator, and OpenAI, with its Jalapeno chip, are attacking from the accelerator side.",
-      "w": "The competitive unit is moving from chip to system, which changes procurement downstream: if the differentiator is data movement and orchestration rather than FLOPs, multi-vendor accelerator strategies get harder to execute without absorbing integration cost that used to sit with the vendor. This is the argument for treating inference infrastructure as a platform commitment rather than a commodity substitution."
+      "w": "The competitive unit is moving from chip to system, which changes procurement downstream: if the differentiator is data movement and orchestration rather than FLOPs, multi-vendor accelerator strategies get harder to execute without absorbing integration cost that used to sit with the vendor. This is the argument for treating inference infrastructure as a platform commitment rather than a commodity substitution.",
+      "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/"
     },
     {
       "id": "0c24a3ca3dcbcabd",
@@ -384,7 +431,8 @@
       "headline": "Judge rules the Pentagon's supply-chain-risk label for Anthropic unlawful",
       "source": "TechCrunch",
       "brief": "U.S. District Judge Rita Lin (N.D. Cal.) held the Defense Department's supply-chain-risk designation of Anthropic unlawful, finding First Amendment retaliation, arbitrary-and-capricious agency action, and Fifth Amendment due-process failures. Lin wrote that the government's words and deeds confirm the actions were based on a desire to make a public example of the company for its arrogance in criticizing the government. The dispute followed Anthropic's refusal of Pentagon requests to remove guardrails that would have permitted autonomous weapons applications and mass surveillance. A second case remains pending in Washington, D.C.",
-      "w": "Supply-chain-risk and exclusion designations are administratively cheap, effectively self-executing and historically near-unreviewable — a finding that one is retaliatory and procedurally defective creates a template for challenging debarment-adjacent tools generally, not just in AI. For enterprise buyers, vendor usage-policy refusals now carry adjudicated legal backing, which makes contractual guardrail terms more durable than they looked six months ago."
+      "w": "Supply-chain-risk and exclusion designations are administratively cheap, effectively self-executing and historically near-unreviewable — a finding that one is retaliatory and procedurally defective creates a template for challenging debarment-adjacent tools generally, not just in AI. For enterprise buyers, vendor usage-policy refusals now carry adjudicated legal backing, which makes contractual guardrail terms more durable than they looked six months ago.",
+      "url": "https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/"
     },
     {
       "id": "116de263bb248161",
@@ -392,7 +440,8 @@
       "headline": "Nvidia reportedly agrees to acquire Hugging Face for $12.9 billion",
       "source": "gHacks",
       "brief": "Reports describe an agreement at roughly $12.9 billion — about 86x Hugging Face's approximately $150 million annualized revenue, and larger than Nvidia's $7 billion Mellanox deal. Hugging Face hosts around 13 million users, over 2 million public models and more than 500,000 datasets. Neither company has confirmed. Analysts flag platform-neutrality concerns given Hugging Face's work with AMD, Google and AWS, and draw comparison to the ARM acquisition that collapsed under antitrust pressure in 2022.",
-      "w": "The distribution layer for open-weight models is a chokepoint on model portability — the same property enterprises rely on when they design for vendor substitution. Unlike Nvidia's investment-and-supply-agreement structures, an outright acquisition triggers HSR review, so this is the first time the company's ecosystem consolidation gets tested against merger law rather than routed around it."
+      "w": "The distribution layer for open-weight models is a chokepoint on model portability — the same property enterprises rely on when they design for vendor substitution. Unlike Nvidia's investment-and-supply-agreement structures, an outright acquisition triggers HSR review, so this is the first time the company's ecosystem consolidation gets tested against merger law rather than routed around it.",
+      "url": "https://www.ghacks.net/2026/08/28/nvidia-reportedly-agrees-to-buy-open-source-ai-hub-hugging-face-for-12-9-billion/"
     },
     {
       "id": "7bbb293c57c5ff6b",
@@ -400,7 +449,8 @@
       "headline": "Open-weight AI companies are the Valley's hottest acquisition targets",
       "source": "TechCrunch",
       "brief": "Alongside Nvidia-Hugging Face, the piece cites Nvidia's roughly $6 billion Poolside deal and Stripe's $7 billion-plus acquisition of OpenRouter, framing a hedge against dependence on frontier labs now building their own inference silicon. Adoption remains thin: a Ramp survey puts open-weight model use at 6% of companies and Jellyfish data at 2% of software engineers, while router Fireworks processes 40 trillion tokens daily. Fireworks CEO Lin Qiao predicted every company should have its own model per use case.",
-      "w": "The 6%-adoption-versus-$26bn-in-deals gap is the tell — acquirers are pricing an option on future substitution rather than current demand. The per-use-case thesis matters most for well-defined, high-volume processes with tight feedback loops, where fine-tuned small models beat general frontier calls on cost and latency; exploratory work still argues for frontier capability, so the practical enterprise answer is a routing layer, not a platform choice."
+      "w": "The 6%-adoption-versus-$26bn-in-deals gap is the tell — acquirers are pricing an option on future substitution rather than current demand. The per-use-case thesis matters most for well-defined, high-volume processes with tight feedback loops, where fine-tuned small models beat general frontier calls on cost and latency; exploratory work still argues for frontier capability, so the practical enterprise answer is a routing layer, not a platform choice.",
+      "url": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/"
     },
     {
       "id": "1bdef960944d20b7",
@@ -408,7 +458,8 @@
       "headline": "Neocloud Lambda secures $1B in debt to buy more Nvidia chips",
       "source": "TechCrunch",
       "brief": "JPMorgan Chase arranged $1 billion in private, short-dated debt structured for repayment from revenue on the chips Lambda deploys and leases, with Microsoft the primary customer for this tranche. Lambda is reportedly in talks for a $3 billion pre-IPO round; it closed a $1 billion senior credit facility in May 2026 and a $926 million term loan for Nvidia GB300 GPUs, after raising $1.5 billion in venture capital in November 2025 at a $5.43 billion valuation. More than $400 billion in AI-related debt has been raised globally in 2026.",
-      "w": "GPU-collateralized short-dated debt prices an asset whose useful economic life is set by the next architecture generation, so the repayment thesis depends on lease revenue arriving faster than depreciation — a maturity mismatch with an obvious failure mode if utilization softens. For anyone forecasting compute pricing, a growing debt-funded share of capacity means supply is less responsive to demand signals than equity-funded buildout would be."
+      "w": "GPU-collateralized short-dated debt prices an asset whose useful economic life is set by the next architecture generation, so the repayment thesis depends on lease revenue arriving faster than depreciation — a maturity mismatch with an obvious failure mode if utilization softens. For anyone forecasting compute pricing, a growing debt-funded share of capacity means supply is less responsive to demand signals than equity-funded buildout would be.",
+      "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/"
     },
     {
       "id": "98a74659d916e334",
@@ -416,7 +467,8 @@
       "headline": "Administration weighs expanding chip tariffs to laptops, servers and consoles",
       "source": "Tom's Hardware",
       "brief": "Commerce is reportedly considering extending semiconductor duties past chips to finished goods including data-center servers, laptops and gaming consoles, with Secretary Howard Lutnick favoring caps on duty-free chip imports pegged to each company's committed US production. January's exemptions covering data centers, R&D, startups and consumer devices may not carry over. The CCIA's Jonathan McHale likened the AI buildout to building the transcontinental railroad and warned added cost and unpredictability put investment at risk; domestic buildouts need more than five years.",
-      "w": "Volume-linked duty-free caps are industrial-policy quotas administered through tariff authority — conditioning market access on private capital commitments is a materially different instrument than a flat rate, and much harder to model in a three-year infrastructure plan. If server exemptions lapse, the cost lands on the capex side of exactly the projects whose economics already depend on debt structures like Lambda's."
+      "w": "Volume-linked duty-free caps are industrial-policy quotas administered through tariff authority — conditioning market access on private capital commitments is a materially different instrument than a flat rate, and much harder to model in a three-year infrastructure plan. If server exemptions lapse, the cost lands on the capex side of exactly the projects whose economics already depend on debt structures like Lambda's.",
+      "url": "https://www.tomshardware.com/tech-industry/policy/trump-administration-weighs-expanding-chip-tariffs-to-laptops-consoles-and-servers"
     },
     {
       "id": "a6371b7313987fd9",
@@ -424,7 +476,8 @@
       "headline": "116 companies sign an open letter calling for collective action on AI cyber defense",
       "source": "Engadget",
       "brief": "OpenAI and Google convened more than 100 companies across AI, tech and finance behind a call for collective action on cyber defense, with signatories including Anthropic, AWS, Cisco, Cloudflare, CrowdStrike, Hugging Face, Microsoft, Oracle and Perplexity. The letter warns that in the coming months AI-enabled cyber attacks will become far more widespread and sophisticated. Concrete asks of frontier labs: build observability and security tooling, ensure agentic identities are traceable and accountable, and share continuous-monitoring practices.",
-      "w": "Traceable and accountable agentic identities is the load-bearing phrase — it concedes that agents acting under delegated human credentials break the existing identity and audit model, an architecture problem enterprises must solve before an agent touches a production system. A voluntary industry pledge is also the standard precursor to a safe-harbor regime or a duty-of-care standard, so read the specific commitments as a preview of eventual compliance requirements."
+      "w": "Traceable and accountable agentic identities is the load-bearing phrase — it concedes that agents acting under delegated human credentials break the existing identity and audit model, an architecture problem enterprises must solve before an agent touches a production system. A voluntary industry pledge is also the standard precursor to a safe-harbor regime or a duty-of-care standard, so read the specific commitments as a preview of eventual compliance requirements.",
+      "url": "https://www.engadget.com/2245969/openai-google-and-dozens-of-other-companies-publish-open-letter-calling-for-collective-action-on-cyber-defense/"
     },
     {
       "id": "67daacb39a9eca33",
@@ -432,7 +485,8 @@
       "headline": "Cox appoints two more justices in a year of major changes to Utah's Supreme Court",
       "source": "Utah News Dispatch",
       "brief": "Gov. Spencer Cox named 5th District Judge Matthew Bell and civil litigator Michael Menssen to the Utah Supreme Court, filling the seats of retiring Chief Justice Matthew Durrant and former Justice Diana Hagen, who resigned in May. Both require Senate confirmation, and Cox said he expects to name a new chief justice within six to eight weeks. Cox said originalism is very important to him and to these justices, and that there is no place for judicial activism in the system.",
-      "w": "Once confirmed, Cox will have appointed six of seven justices on a court expanded by two seats under a 2025 law passed after the court's redistricting rulings against the Legislature — a structural realignment that will shape how the 2027 session drafts anything it expects to be litigated."
+      "w": "Once confirmed, Cox will have appointed six of seven justices on a court expanded by two seats under a 2025 law passed after the court's redistricting rulings against the Legislature — a structural realignment that will shape how the 2027 session drafts anything it expects to be litigated.",
+      "url": "https://utahnewsdispatch.com/2026/08/28/cox-appoints-2-utah-supreme-court-justices-in-year-of-major-changes/"
     },
     {
       "id": "f1e72860a03bd73a",
@@ -440,7 +494,8 @@
       "headline": "ICE abandons its Salt Lake City mega-center, but enforcement in Utah is not slowing",
       "source": "Utah News Dispatch",
       "brief": "A court filing this month confirmed ICE dropped plans to convert a Salt Lake City warehouse into a detention center, and the property is being sold. Volume has not fallen: Utah recorded 613 ICE arrests in June 2026, the highest monthly total of Trump's second term, followed by 548 in July. Attorneys describe arrests at Salt Lake City International Airport, gas stations and residential streets, including people with pending status applications.",
-      "w": "No Utah detention hub means arrestees are moved out of state, which complicates counsel access and county jail contracting — questions the Legislature has so far handled through 287(g) reimbursement policy rather than statute."
+      "w": "No Utah detention hub means arrestees are moved out of state, which complicates counsel access and county jail contracting — questions the Legislature has so far handled through 287(g) reimbursement policy rather than statute.",
+      "url": "https://utahnewsdispatch.com/2026/08/28/ice-is-abandoning-plans-for-its-salt-lake-city-mega-center-but-its-not-slowing-down-in-utah/"
     },
     {
       "id": "9ce2a52b0b3e6aeb",
@@ -448,7 +503,8 @@
       "headline": "Cities and farmers face uncertainty under the federal Colorado River plan",
       "source": "KUER",
       "brief": "The Bureau of Reclamation finalized a federal strategy for the Colorado River system, which serves roughly 40 million people across seven states, tribes and Mexico. California, Nevada and Arizona must collectively cut about 1.25 million acre-feet a year over the next two years, with deeper cuts possible. Utah, Colorado, Wyoming and New Mexico face no mandatory reductions now but may reduce voluntarily.",
-      "w": "Utah escapes mandatory cuts this round, but Upper Basin exposure grows as reservoirs decline — directly relevant to how the state prices Lake Powell Pipeline-adjacent planning and to Great Salt Lake tributary demands in the coming budget cycle."
+      "w": "Utah escapes mandatory cuts this round, but Upper Basin exposure grows as reservoirs decline — directly relevant to how the state prices Lake Powell Pipeline-adjacent planning and to Great Salt Lake tributary demands in the coming budget cycle.",
+      "url": "https://www.kuer.org/science-environment/2026-08-29/cities-and-farmers-feel-anxiety-uncertainty-about-the-feds-colorado-river-plan"
     },
     {
       "id": "4c7e4f3518001033",
@@ -456,7 +512,8 @@
       "headline": "Utah clerks say mail-in voting litigation should not affect the November election",
       "source": "Utah News Dispatch",
       "brief": "A USPS rule stemming from the president's executive order — imposing ballot-design requirements, federal voter-data sharing and limits on delivering ballots to unconfirmed voters — briefly took effect before Judge Indira Talwani froze it for two weeks. Weber County Clerk/Auditor Ricky Hatch said any dramatic change at this point is extremely impractical, invoking the Purcell principle. Lt. Gov. Deidre Henderson called the rule an unmitigated disaster and said the order lets officials proceed with the Nov. 3 midterms as planned.",
-      "w": "Utah runs near-universal vote-by-mail, so a federal mail-ballot mandate lands harder here than almost anywhere. Henderson's posture also shows the state's Republican election apparatus separating administrative feasibility from national party messaging."
+      "w": "Utah runs near-universal vote-by-mail, so a federal mail-ballot mandate lands harder here than almost anywhere. Henderson's posture also shows the state's Republican election apparatus separating administrative feasibility from national party messaging.",
+      "url": "https://utahnewsdispatch.com/2026/08/27/utah-clerks-dont-expect-lawsuits-over-trumps-mail-in-voting-rule-to-impact-elections-this-year/"
     },
     {
       "id": "f274da8159e786ba",
@@ -464,7 +521,8 @@
       "headline": "Conservation groups seek more time on the federal plan to rescind the Roadless Rule",
       "source": "Boise State Public Radio",
       "brief": "The comment period on rescinding the 2001 Roadless Area Conservation Rule, covering about 45 million acres across 38 states, closes September 21, 2026. Earthjustice, on behalf of the Wilderness Society, Sierra Club and others, is asking for at least 120 days and public hearings nationwide. In the Mountain West the rule applies everywhere except Colorado and Idaho, which have state-specific rules — meaning Utah's roadless acreage is fully in scope.",
-      "w": "Utah has consistently sought more road access on Forest Service land, so rescission aligns with state policy while cutting against the timelines Utah conservation groups rely on. The truncated comment window is itself the likeliest litigation hook."
+      "w": "Utah has consistently sought more road access on Forest Service land, so rescission aligns with state policy while cutting against the timelines Utah conservation groups rely on. The truncated comment window is itself the likeliest litigation hook.",
+      "url": "https://www.boisestatepublicradio.org/2026-08-28/environmentalists-want-more-time-for-public-comment-on-feds-plan-to-rescind-roadless-rule"
     },
     {
       "id": "6e32af13d5bfbe49",
@@ -472,7 +530,8 @@
       "headline": "USU, Hi Tech Solutions and Brigham City sign an agreement for a nuclear training and research campus",
       "source": "Utah Business",
       "brief": "The parties will develop a Center for Energy Research & Technology adjacent to USU's Brigham City campus, covering nuclear operations, maintenance, safety, engineering and advanced manufacturing. The first phase is an estimated 20,000-square-foot facility, with staged buildout expected to reach $100 million. Construction is anticipated to begin by 2028, pending funding and approvals, on a favorable USU land arrangement.",
-      "w": "This is the workforce leg of Operation Gigawatt — the piece that has to exist before Hi Tech's Green River and Brigham City reactor projects are credible. The additional-financial-commitments language points at a capital ask arriving in a future higher-ed capital priorities list."
+      "w": "This is the workforce leg of Operation Gigawatt — the piece that has to exist before Hi Tech's Green River and Brigham City reactor projects are credible. The additional-financial-commitments language points at a capital ask arriving in a future higher-ed capital priorities list.",
+      "url": "https://www.utahbusiness.com/press-releases/2026/08/27/hi-tech-solutions-utah-state-university-brigham-city-nuclear-training-campus/"
     },
     {
       "id": "2f632f74d64afb76",
@@ -480,7 +539,8 @@
       "headline": "Here's what Weber County is billing ICE for its deputies' immigration work",
       "source": "KUER",
       "brief": "Weber County approved its 287(g) reimbursement agreement on August 18 and has billed ICE $3,387 for 2025 and $14,789 for 2026 through July. Two trained deputies logged 236 hours on immigration work from January through July — under eight hours a week — after 54 hours in the last quarter of 2025. The county also received a one-time $115,000 payment in October 2025 for equipment and a vehicle.",
-      "w": "These are the first hard public numbers on what 287(g) actually costs and returns in a Utah county, giving commissions elsewhere along the Wasatch Front a real figure to weigh against the political cost of signing."
+      "w": "These are the first hard public numbers on what 287(g) actually costs and returns in a Utah county, giving commissions elsewhere along the Wasatch Front a real figure to weigh against the political cost of signing.",
+      "url": "https://www.kuer.org/politics-government/2026-08-26/weber-county-287g-ice-agreement-reembursement"
     },
     {
       "id": "5c5029142280f540",
@@ -488,7 +548,8 @@
       "headline": "St. George-based Curant.ai secures a $3.1 million seed round for AI insurance claims",
       "source": "TechBuzz News",
       "brief": "Curant.ai, founded by CEO John Haller and operating from Kiln St. George with a core team of five, raised $3.1 million led by Montreal-based Diagram Ventures, with Humania Insurance, Provo-based Element Ventures, Blue Plains Capital and angels participating. Early disability-claims deployments cut document reading time roughly 90 percent and manual analysis time about 50 percent. The company plans expansion into life insurance and North American carriers.",
-      "w": "A seed round this size landing in Washington County rather than Lehi is a useful marker for whether southern Utah's Kiln-anchored ecosystem can retain companies past the seed stage, which is the premise behind the state's rural innovation funding."
+      "w": "A seed round this size landing in Washington County rather than Lehi is a useful marker for whether southern Utah's Kiln-anchored ecosystem can retain companies past the seed stage, which is the premise behind the state's rural innovation funding.",
+      "url": "https://www.techbuzznews.com/curant-ai-secures-3-1m-seed-round/"
     },
     {
       "id": "62ce14efd0018c34",
@@ -496,7 +557,8 @@
       "headline": "Utah bet on going it alone against Meta, and collected $212 million",
       "source": "TechBuzz News",
       "brief": "Utah will receive $212 million over 10 years — potentially up to $301 million — from a $12.2 billion national settlement with Meta announced August 26. Beyond money, Meta must add age verification with annual audits, two-hour daily limits with break prompts, midnight-to-6 a.m. access blocks, silenced notifications during school hours, removal of beauty filters and hidden like counts. AG Derek Brown said the deal forces Meta to place child safety above its business model.",
-      "w": "The Division of Consumer Protection's decision to litigate in state court under the Utah Consumer Sales Practices Act, rather than fold into the multistate federal case, is the template the AG's office will cite for the next platform action — and $212 million over a decade is a recurring line the Legislature will have to decide how to appropriate."
+      "w": "The Division of Consumer Protection's decision to litigate in state court under the Utah Consumer Sales Practices Act, rather than fold into the multistate federal case, is the template the AG's office will cite for the next platform action — and $212 million over a decade is a recurring line the Legislature will have to decide how to appropriate.",
+      "url": "https://www.techbuzznews.com/meta-settlement/"
     },
     {
       "id": "146b2fca5c0baba0",
@@ -504,7 +566,8 @@
       "headline": "Utah spaceport update: a presidential order, site visits, and a sense of inevitability",
       "source": "TechBuzz News",
       "brief": "A National Space Transportation Policy issued August 21 directs federal agencies to plan for more than 1,000 launches and reentries by 2030 and gives DOT 180 days to identify additional launch sites. Consultant RS&H completed Phase Two assessments of Delta in Millard County — infrastructure-rich and flat, with 8 expected casualties per million against the FAA's 100-per-million threshold — and Green River, which scored 61 per million and faces Wild and Scenic river complications. Utah's Request for Interest closes September 14, with a legislative report in November.",
-      "w": "The November report is the decision point, and the Delta-versus-Green River gap on flight safety and environmental review makes Millard County the path of least permitting resistance — worth watching against the same rural-siting backlash that hit the Box Elder data center."
+      "w": "The November report is the decision point, and the Delta-versus-Green River gap on flight safety and environmental review makes Millard County the path of least permitting resistance — worth watching against the same rural-siting backlash that hit the Box Elder data center.",
+      "url": "https://www.techbuzznews.com/utah-spaceport-update-aug-21-2026/"
     },
     {
       "id": "7628751d3807eb2b",
@@ -512,7 +575,8 @@
       "headline": "The VC wishlist: what Utah investors are looking for now",
       "source": "Utah Business",
       "brief": "Seven Utah-area firms — Frazier VC, Capital Eleven, Sorenson Capital, Spacestation Investments, F&F Ventures, Album VC and Kickstart — describe a shift toward vertical AI, durable unit economics and consumer brands over horizontal SaaS. The framing is two 2026 take-privates: Domo sold its core business to Progress Software for $400 million after a peak valuation near $2 billion, and Weave went private with Francisco Partners at $650 million. AI companies absorbed 86 percent of US venture capital in the first half of 2026, concentrated on the coasts.",
-      "w": "Two Silicon Slopes anchor public companies leaving the public markets in one year thins the region's comparable set, its executive talent pipeline and the local wealth-creation events that seed the next fund cycle — a real input to how GOEO designs incentives."
+      "w": "Two Silicon Slopes anchor public companies leaving the public markets in one year thins the region's comparable set, its executive talent pipeline and the local wealth-creation events that seed the next fund cycle — a real input to how GOEO designs incentives.",
+      "url": "https://www.utahbusiness.com/industry/2026/08/25/vc-wishlist-utah-investors-silicon-slopes-founders-funders-private-local/"
     },
     {
       "id": "83f1cd08aeab1a66",
@@ -520,7 +584,8 @@
       "headline": "Utah's first Hard Tech Week opens the door for companies to host events statewide",
       "source": "TechBuzz News",
       "brief": "47G and Utah Tech Week are organizing Hard Tech Week for October 26-30, 2026, centered in Salt Lake City with satellite events along the Wasatch Front and roughly 5,000 expected participants. The Zero Gravity Summit anchors October 28-29; the surrounding days are open for community-hosted events, free to host and attend. Co-founder Trent Mano said the goal is to pull companies out of the corners and give them the main week.",
-      "w": "47G is deliberately building a convening layer around Hill Air Force Base and the aerospace-defense cluster — the same constituency behind the spaceport RFI and the state's Olympics-adjacent infrastructure pitch."
+      "w": "47G is deliberately building a convening layer around Hill Air Force Base and the aerospace-defense cluster — the same constituency behind the spaceport RFI and the state's Olympics-adjacent infrastructure pitch.",
+      "url": "https://www.techbuzznews.com/utahs-first-hard-tech-week/"
     },
     {
       "id": "a90ae70b8a81eddf",
@@ -528,7 +593,8 @@
       "headline": "AI's growing burden on Utah courts and legal professionals",
       "source": "Utah Business",
       "brief": "Nancy Sylvester — senior corporate counsel at PACS, previously general counsel for the Utah State Bar and associate general counsel for the Utah State Courts — argues AI is shifting rather than reducing legal workload. Self-represented litigants can now generate voluminous filings quickly, forcing judges and staff to review documents that are often inaccurate or procedurally flawed. She cites Judge Kasey Wright's resignation as a catalyst and calls for guardrails and investment in judicial resources rather than resistance.",
-      "w": "Written by a former Utah courts insider, this frames AI-driven filing volume as a judicial branch appropriations problem — arriving just as Cox reshapes the Supreme Court and the Legislature weighs court staffing for 2027."
+      "w": "Written by a former Utah courts insider, this frames AI-driven filing volume as a judicial branch appropriations problem — arriving just as Cox reshapes the Supreme Court and the Legislature weighs court staffing for 2027.",
+      "url": "https://www.utahbusiness.com/industry/2026/08/28/ai-growing-burden-courts-legal-professionals-technology-attorneys-judges/"
     },
     {
       "id": "0c08e2dc7a049fab",
@@ -536,7 +602,8 @@
       "headline": "Utah volleyball opens the 2026 season with a sweep of Utah Valley",
       "source": "Utah Athletics",
       "brief": "Utah beat Utah Valley 3-0 (25-17, 25-22, 25-23) at Lockhart Arena in Orem, giving Alyssa D'Errico her first career win as head coach. Kamryn Gibadlo and Loryn Helgesen had 13 kills each, Isabella Mogridge dished 26 assists, Sierra Grizzle added 15 digs and a career-high three aces, and Devyn Wiest hit .750 with eight kills. The Utes faced Utah Tech on August 29 in Orem, a first-ever meeting between the programs.",
-      "w": "A new head coach opening with a road sweep matters for a program trying to stay relevant in a Big 12 that now includes perennial national contenders."
+      "w": "A new head coach opening with a road sweep matters for a program trying to stay relevant in a Big 12 that now includes perennial national contenders.",
+      "url": "https://utahutes.com/news/2026/8/28/utah-volleyball-opens-2026-season-with-sweep-of-utah-valley"
     },
     {
       "id": "d32ed8d2e3e30d22",
@@ -544,7 +611,8 @@
       "headline": "Utah names six captains and a 15-player leadership council for 2026",
       "source": "KSL Sports",
       "brief": "Teammates elected six captains: QB Devon Dampier, RB Wayshawn Parker, OL Alex Harrison, LB Johnathan Hall, LB Trey Reynolds and S Nate Ritchie. The 15-player council adds Byrd Ficklin, Braden Pegan, Tobias Merriweather, Zereoue Williams, Lance Holtzclaw, Ethan Day, Karson Kaufusi, Rabbit Evans, Jackson Bennee and Logan Castor. Morgan Scalley enters his first full season after an 11-win 2025, having lost two first-round offensive line draft picks.",
-      "w": "Player-elected leadership is the clearest early read on whether Scalley has held the locker room culture through a coaching transition and heavy offensive line turnover."
+      "w": "Player-elected leadership is the clearest early read on whether Scalley has held the locker room culture through a coaching transition and heavy offensive line turnover.",
+      "url": "https://sports.ksl.com/ncaa/utah/utah-captains-leadership/576510"
     },
     {
       "id": "48a10462b727b2d3",
@@ -552,7 +620,8 @@
       "headline": "Devon Dampier's progression reveals what could come next for Utah in 2026",
       "source": "KSL Sports",
       "brief": "Dampier's completion rate rose from 57.9 percent in 2024 to 63.5 percent in 2025, touchdowns from 12 to 24, interceptions fell from 12 to five and passer rating climbed from 121.6 to 146.8, though total offense dipped from 3,934 to 3,325 yards. His third-down rating jumped to 173.4 and fourth-quarter rating hit 182.9, but deep-ball accuracy slipped from 39.4 to 31.5 percent. Projections put him at 2,700-2,900 passing yards and 25-27 touchdowns in 2026.",
-      "w": "Utah's Big 12 ceiling rests almost entirely on whether Dampier recovers the 2024 explosiveness without giving back the 2025 ball security — the single biggest variable ahead of the September 3 opener against Idaho."
+      "w": "Utah's Big 12 ceiling rests almost entirely on whether Dampier recovers the 2024 explosiveness without giving back the 2025 ball security — the single biggest variable ahead of the September 3 opener against Idaho.",
+      "url": "https://sports.ksl.com/ncaa/utah/devon-dampier-utah-2026-2/576573"
     },
     {
       "id": "eaa793891153252d",
@@ -560,7 +629,8 @@
       "headline": "Utah basketball's roster comes into focus after a whirlwind 12 hours",
       "source": "KSL Sports",
       "brief": "The NCAA ruled Israeli guard Noam Yaacov ineligible for 2026-27, costing Alex Jensen a planned offensive initiator, while Utah announced transfers Trey Campbell (Northern Iowa) and Austrian big man Fynn Schott the same day. The five-player portal class — Jackson Holcombe, Campbell, TJ Burch, Taison Chatman and Malek Gomma — ranks No. 27 nationally, up from No. 88 last year. Ten players departed, including Keanu Dawes to Kansas and Terrence Brown to North Carolina.",
-      "w": "Jensen's second offseason shows a deliberate shift to fewer, higher-rated portal additions — the model Big 12 programs are converging on under revenue sharing."
+      "w": "Jensen's second offseason shows a deliberate shift to fewer, higher-rated portal additions — the model Big 12 programs are converging on under revenue sharing.",
+      "url": "https://sports.ksl.com/ncaa/utah/utah-basketball-transfer-roster/576488"
     },
     {
       "id": "e2f40178cac72f4b",
@@ -568,7 +638,8 @@
       "headline": "Utah almost feels like home, but Gaige Weddle is determined to build his own legacy",
       "source": "KSL Sports",
       "brief": "Gaige Weddle, a two-way quarterback and defensive back at Rancho Bernardo High School in the 2028 class, is uncommitted with interest from Georgia, Ohio State, Oklahoma, Miami, Utah, Arizona State, BYU and UCLA. He is the son of Eric Weddle, the Utah All-American and six-time Pro Bowl safety who enters Utah's Ring of Honor at the September 12 Arkansas game. Weddle said a Utah commitment would not be because of his dad.",
-      "w": "Utah's ability to compete with SEC and Big Ten programs for a legacy recruit is a practical measure of where the program's NIL and roster resources sit two years into Big 12 membership."
+      "w": "Utah's ability to compete with SEC and Big Ten programs for a legacy recruit is a practical measure of where the program's NIL and roster resources sit two years into Big 12 membership.",
+      "url": "https://sports.ksl.com/ncaa/utah/utah-almost-feels-like-home-but-gaige-weddle-is-determined-to-build-his-own-legacy/576585"
     },
     {
       "id": "dc5c9eb2401f57dd",
@@ -576,7 +647,8 @@
       "headline": "Utah soccer falls 1-0 to Utah State at Ute Field",
       "source": "Utah Athletics",
       "brief": "Utah State's Ellie Hendrix scored in the 76th minute for a 1-0 win on August 27. Utah outshot the Aggies 8-7 but managed only two shots on goal to Utah State's four, dropping to 2-1-1. Coach Hideki Nakada said he was proud of the way the team played while noting they must be more clinical; Utah travels to Utah Tech on August 30.",
-      "w": "An in-state nonconference loss ahead of Big 12 play narrows Utah's margin for at-large NCAA consideration, where results against regional programs carry outsized weight in the RPI."
+      "w": "An in-state nonconference loss ahead of Big 12 play narrows Utah's margin for at-large NCAA consideration, where results against regional programs carry outsized weight in the RPI.",
+      "url": "https://utahutes.com/news/2026/8/27/soccer-utah-defeated-by-utah-state"
     },
     {
       "id": "f7073bcc7502d05e",
@@ -584,7 +656,8 @@
       "headline": "BYU restructures its athletic department; football now reports to Advancement VP Keith Vorkink",
       "source": "KSL Sports",
       "brief": "BYU announced that head football coach Kalani Sitake will report to Advancement Vice President Keith Vorkink rather than athletic director Brian Santiago. Santiago remains AD and continues to oversee every other sport. BYU said the organizational adjustments reflect its commitment to invest in student-athletes and strengthen its programs; the change lands roughly a week before the September 5 opener against Utah Tech.",
-      "w": "Pulling revenue football out of the AD's line and into the fundraising side is the structure schools adopt when NIL and House-settlement revenue sharing become the binding constraint. For a church-owned institution with a centralized budget office, it also moves football's money decisions closer to the president's cabinet — watch how Big 12 peers copy it."
+      "w": "Pulling revenue football out of the AD's line and into the fundraising side is the structure schools adopt when NIL and House-settlement revenue sharing become the binding constraint. For a church-owned institution with a centralized budget office, it also moves football's money decisions closer to the president's cabinet — watch how Big 12 peers copy it.",
+      "url": "https://sports.ksl.com/ncaa/byu-football/byu-athletic-department-restructure-santiago/576558"
     },
     {
       "id": "de9afa1c80b27798",
@@ -592,7 +665,8 @@
       "headline": "Timpanogos School District board opens formal closure studies on 13 schools",
       "source": "Lehi Free Press",
       "brief": "The board of the new Timpanogos School District voted unanimously to begin closure studies covering three junior highs (Canyon View, Oak Canyon, Orem) and ten elementaries including Lindon, Orem, Northridge, Windsor and Rocky Mountain. Officials described one possible junior-high closure and three to five elementary closures, with district-wide boundary changes authorized alongside. A 90-day public feedback process follows, with recommendations expected by year-end; the district projects about 23,330 students when it begins operating in 2027.",
-      "w": "This is the first hard cost of the Alpine district split coming due — the new district inherits Orem, Lindon and Vineyard's older, emptier building stock without Lehi's growth to cross-subsidize it. Expect the closure list to organize the 2027 Timpanogos board races and to feature in any future Utah district-split petition."
+      "w": "This is the first hard cost of the Alpine district split coming due — the new district inherits Orem, Lindon and Vineyard's older, emptier building stock without Lehi's growth to cross-subsidize it. Expect the closure list to organize the 2027 Timpanogos board races and to feature in any future Utah district-split petition.",
+      "url": "https://lehifreepress.com/2026/08/28/timpanogos-school-board-to-study-potential-school-closures-2/"
     },
     {
       "id": "b4887ceeacf2aa01",
@@ -600,7 +674,8 @@
       "headline": "UTA, Utah County and UDOT open the 77-square-mile North Utah County On Demand zone",
       "source": "Utah Transit Authority",
       "brief": "UTA announced an August 27 grand opening at the Lehi FrontRunner Station for a new On Demand zone covering Eagle Mountain, Saratoga Springs, Lehi, American Fork and Highland. Key destinations include the Lehi and American Fork FrontRunner stations, Primary Children's Hospital-Lehi and multiple schools. The service is funded jointly by Utah County and UDOT; speakers included Commission Chair Skyler Beltran, UDOT Transit Director Jim Golden and UTA Executive Director Jay Fox.",
-      "w": "This is county-funded microtransit substituting for fixed-route buses in low-density growth corridors, and the FrontRunner anchoring is the tell — a first-mile/last-mile play to make commuter rail viable in a place built for cars. Ridership here shapes whether Utah County keeps buying service county-by-county rather than joining UTA's tax base."
+      "w": "This is county-funded microtransit substituting for fixed-route buses in low-density growth corridors, and the FrontRunner anchoring is the tell — a first-mile/last-mile play to make commuter rail viable in a place built for cars. Ridership here shapes whether Utah County keeps buying service county-by-county rather than joining UTA's tax base.",
+      "url": "https://rideuta.com/Rider-Info/Digital-Newsroom/Utah-County-UDOT-and-UTA-to-host-grand-opening-event-for-North-Utah-County-UTA-On-Demand-Zone"
     },
     {
       "id": "6001d7c325b702c1",
@@ -608,7 +683,8 @@
       "headline": "Vineyard councilman and father offer land to break the 400 South stalemate",
       "source": "KSL",
       "brief": "A roughly 200-yard unfinished stretch of 400 South, approved for construction in March 2022, has stalled for six months amid a dispute touching property owned by Councilman Jacob Holdaway and his father Keith. With two bus routes cancelled under new district walking standards, children are walking a segment lacking sidewalks on the north side. Holdaway said his father will donate the triangle parcel and he will donate the corner; the compromise would be folded into the Cadence Homes development agreement.",
-      "w": "A textbook small-city conflict-of-interest problem — a sitting councilmember is both a decision-maker on road standards and an adjacent landowner. Resolving it through a development-agreement amendment rather than condemnation is the cheap path, but it leaves the city dependent on a private developer's consent for a public safety fix."
+      "w": "A textbook small-city conflict-of-interest problem — a sitting councilmember is both a decision-maker on road standards and an adjacent landowner. Resolving it through a development-agreement amendment rather than condemnation is the cheap path, but it leaves the city dependent on a private developer's consent for a public safety fix.",
+      "url": "https://www.ksl.com/article/51615671/why-is-a-200-yard-stretch-of-road-in-vineyard-causing-such-a-ruckus"
     },
     {
       "id": "7fd696b78b03e029",
@@ -616,7 +692,8 @@
       "headline": "Orem council approves a 6.95% property tax increase to add two police officers",
       "source": "KUTV 2News",
       "brief": "The Orem City Council approved a property tax increase raising roughly $450,000 a year to fund two additional police officers and associated employment costs, about $11.73 annually on a $520,000 home. Residents split at the Truth in Taxation hearing: retiree Mike Preston said his property taxes are up 67% over a decade and residents feel taxed out of their homes, while Alan Openshaw backed the increase citing reduced police presence. The vote was 5-2.",
-      "w": "Orem is raising rates for two FTEs — a reminder of how little marginal revenue Utah's Truth in Taxation regime yields per hearing, and why cities increasingly bundle public-safety asks into bonds instead. The 67% decade-long complaint is valuation growth, not rate growth, which is the recurring communication failure of the whole system."
+      "w": "Orem is raising rates for two FTEs — a reminder of how little marginal revenue Utah's Truth in Taxation regime yields per hearing, and why cities increasingly bundle public-safety asks into bonds instead. The 67% decade-long complaint is valuation growth, not rate growth, which is the recurring communication failure of the whole system.",
+      "url": "https://kutv.com/news/local/orem-city-council-votes-for-property-tax-increase"
     },
     {
       "id": "32dce18cfb2c20a1",
@@ -624,7 +701,8 @@
       "headline": "UVU launches a merit scholarship for its concurrent-enrollment students",
       "source": "American Fork Citizen",
       "brief": "Utah Valley University created a Freshman Concurrent Enrollment Merit Scholarship with two tiers worth $3,500 to $5,000 a year, renewable up to four years for a maximum of $20,000. Tiers are set by the number of UVU concurrent-enrollment credits earned in high school; those students are automatically admitted and need only submit a transcript by February 1 of senior year. Senior director of concurrent enrollment Spencer Childs said such students have already proven themselves academically.",
-      "w": "Concurrent enrollment is UVU's cheapest recruiting channel and its main defense against BYU and out-of-state poaching of high-performing Utah County students. Converting dual-credit participation into a price discount is also a hedge against flat high-school-graduate projections, arriving as Jon Anderson takes over as president."
+      "w": "Concurrent enrollment is UVU's cheapest recruiting channel and its main defense against BYU and out-of-state poaching of high-performing Utah County students. Converting dual-credit participation into a price discount is also a hedge against flat high-school-graduate projections, arriving as Jon Anderson takes over as president.",
+      "url": "https://afcitizen.com/2026/08/27/uvu-launches-new-concurrent-enrollment-scholarship/"
     },
     {
       "id": "189301311ac7d005",
@@ -632,7 +710,8 @@
       "headline": "SLC directs $35M to capital projects as the program's funding base keeps shrinking",
       "source": "KSL",
       "brief": "The city allocated about $35 million in capital improvement funds — $19.3M for transportation, $12.7M for parks including Glendale Regional Park, and $2.8M for city facilities. The CIP has fallen from $58 million two years ago to $44 million last year to $35 million now, even after a 12.5% property tax increase generated $13 million offset by an equal amount of cuts. Council Chair Alejandro Puy warned many of this year's cuts were one-time, so more deficits are likely; the mayor may pursue a transportation utility fee or an event ticket tax.",
-      "w": "This is the structural story under every SLC land-use fight — the city is approving growth faster than it can fund the streets and utilities that serve it. A transportation utility fee and a ticket tax both avoid a Truth in Taxation hearing, which is precisely why they will draw legislative attention on the Hill."
+      "w": "This is the structural story under every SLC land-use fight — the city is approving growth faster than it can fund the streets and utilities that serve it. A transportation utility fee and a ticket tax both avoid a Truth in Taxation hearing, which is precisely why they will draw legislative attention on the Hill.",
+      "url": "https://www.ksl.com/article/51616363/salt-lake-city-directs-35m-toward-various-capital-projects-but-could-program-be-in-trouble"
     },
     {
       "id": "a23f5c29365e074c",
@@ -640,7 +719,8 @@
       "headline": "City unveils the 500 West corridor plan for the Granary District",
       "source": "Salt Lake City Mayor's Office",
       "brief": "The 500 West Corridor Improvement and Connectivity Plan addresses street and utility infrastructure, pedestrian and bike connections, urban heat, stormwater, parking and long-term development along a corridor linking the 9-Line, the Intermodal Hub, North Temple FrontRunner and the Folsom Trail. The Granary segment between 900 South and 600 South is prioritized for near-term work. Blake Thomas cited missing sidewalks, inadequate storm drains and failing asphalt alongside dozens of businesses and nearly 3,000 housing units.",
-      "w": "The Granary is where SLC already upzoned and permitted heavily, so this is the bill arriving for growth the city entitled without infrastructure. Its Olympic-corridor value is real — 500 West is the spine between the Intermodal Hub, the airport line and the downtown entertainment district, making it a plausible candidate for 2034-related state or federal funding rather than the shrinking CIP."
+      "w": "The Granary is where SLC already upzoned and permitted heavily, so this is the bill arriving for growth the city entitled without infrastructure. Its Olympic-corridor value is real — 500 West is the spine between the Intermodal Hub, the airport line and the downtown entertainment district, making it a plausible candidate for 2034-related state or federal funding rather than the shrinking CIP.",
+      "url": "https://www.slc.gov/mayor/2026/08/27/salt-lake-city-reveals-plan-to-create-a-safer-more-connected-and-comfortable-500-west/"
     },
     {
       "id": "ea702d395bb31396",
@@ -648,7 +728,8 @@
       "headline": "Council straw-polls a data-center ban into the Northpoint rezone",
       "source": "Building Salt Lake",
       "brief": "The City Council unanimously supported, in a straw poll, adding a stipulation barring data centers from a proposed 9.64-acre rezone at 2620 N. 2200 West, moving the parcels from AG-2 agricultural to M-1A Northpoint light industrial — a zone where data centers would otherwise be permitted. Council member Victoria Petro credited the developer as incredibly responsive to neighbors' noise and visual concerns. A public hearing is set for September 22 with a possible vote as early as October 6.",
-      "w": "Attaching a use-specific carve-out to a rezone is how a council legislates around a permitted use it cannot otherwise exclude, and it establishes a precedent other Utah jurisdictions facing hyperscale proposals will cite. Given the Legislature's appetite for preempting local land-use authority on energy and data infrastructure, expect the mechanism to be tested."
+      "w": "Attaching a use-specific carve-out to a rezone is how a council legislates around a permitted use it cannot otherwise exclude, and it establishes a precedent other Utah jurisdictions facing hyperscale proposals will cite. Given the Legislature's appetite for preempting local land-use authority on energy and data infrastructure, expect the mechanism to be tested.",
+      "url": "https://buildingsaltlake.com/data-centers-wont-be-allowed-on-northpoint-land-under-rezone-pitch/"
     },
     {
       "id": "f66ff8a6bbcd40f1",
@@ -656,7 +737,8 @@
       "headline": "Advantage Services says it needs $750K by September or closes in October",
       "source": "Utah News Dispatch",
       "brief": "The nonprofit, which employs about 120 people experiencing homelessness or other barriers, faces a $750,000 emergency gap against a roughly $3.5 million annual budget after its Salt Lake City contract fell from about $2 million to under $1 million and insurance costs rose from $177,000 to over $400,000. Closure would end the city's Transitional Storage Program of 500-plus bins, shuttle service to resource centers, and snow removal and maintenance contracts. Shelter the Homeless' Laurie Hopkins said she cannot emphasize enough how crucial they have been.",
-      "w": "The contract cut traces to the same general-fund squeeze driving the CIP decline — and if the storage program lapses, the city's ability to conduct encampment abatements without violating property-retention requirements gets materially harder."
+      "w": "The contract cut traces to the same general-fund squeeze driving the CIP decline — and if the storage program lapses, the city's ability to conduct encampment abatements without violating property-retention requirements gets materially harder.",
+      "url": "https://utahnewsdispatch.com/2026/08/27/longtime-utah-homeless-cleanup-nonprofit-on-brink-of-bankruptcy-issues-urgent-call-for-help/"
     },
     {
       "id": "16677ff9e4efa7bc",
@@ -664,7 +746,8 @@
       "headline": "Wells on 5th townhome rezone gets a friendly first hearing in Liberty Wells",
       "source": "Building Salt Lake",
       "brief": "A proposal for 22 for-sale townhomes at 1990 S. 500 East — trimmed from 24 units — drew little pushback in council briefing. The request would rezone from R-1-5000 to RMF-35 with a general plan amendment from low to medium density. Council member Erica Carlsen credited the developer for adjustments residents said made them feel very heard; Alejandro Puy pressed for water-wise landscaping. Public comment is September 15 with a possible vote September 22.",
-      "w": "For-sale townhomes are the missing rung in an SLC pipeline that has been overwhelmingly rental — 22 ownership units on a single-family parcel is exactly the gentle density the state's housing bills nominally encourage. A quiet Liberty Wells rezone would be a useful data point on whether general plan amendments in established east-side neighborhoods can now clear without a fight."
+      "w": "For-sale townhomes are the missing rung in an SLC pipeline that has been overwhelmingly rental — 22 ownership units on a single-family parcel is exactly the gentle density the state's housing bills nominally encourage. A quiet Liberty Wells rezone would be a useful data point on whether general plan amendments in established east-side neighborhoods can now clear without a fight.",
+      "url": "https://buildingsaltlake.com/liberty-wells-for-sale-townhome-pitch-gets-warm-reception-from-slc-council/"
     },
     {
       "id": "79f1e8c77fe441e8",
@@ -672,7 +755,8 @@
       "headline": "Monte in South Salt Lake takes Utah's first Michelin star",
       "source": "Axios Salt Lake City",
       "brief": "Chef Martin Babio's Monte earned Utah's first Michelin star in the new American Southwest Michelin Guide, one of only five starred restaurants across Utah, Nevada, Arizona and New Mexico. Koyote, Star of India, and Park City's Handle, Matilda and High West's Nelson Cottage were listed as recommended. Bib Gourmand nods went to Feldman's Deli, One More Noodle House and Pho 777 in West Valley City.",
-      "w": "Michelin's regional guides are typically underwritten by tourism agencies, and the timing — eight years out from 2034 — fits a deliberate hospitality-credentialing push ahead of the Games. Notably the star and several nods landed outside SLC proper, in South Salt Lake and West Valley, which is a reasonable argument for those cities in regional visitor-marketing budget talks."
+      "w": "Michelin's regional guides are typically underwritten by tourism agencies, and the timing — eight years out from 2034 — fits a deliberate hospitality-credentialing push ahead of the Games. Notably the star and several nods landed outside SLC proper, in South Salt Lake and West Valley, which is a reasonable argument for those cities in regional visitor-marketing budget talks.",
+      "url": "https://www.axios.com/local/salt-lake-city/2026/08/27/monte-salt-lake-michelin-star-utah-restaurants"
     },
     {
       "id": "a7ad61a18ad38941",
@@ -680,7 +764,8 @@
       "headline": "Salt Lake County sends a $128M recreation bond to November voters",
       "source": "KSL",
       "brief": "The County Council voted 7-1, with Carlos Moreno opposed, to place a $128 million recreation bond — up from an initial $100 million — on the November 3 ballot. Projects include new recreation centers in West Jordan (about $25.7M) and Salt Lake City (about $3.1M), the $21M Union Park Recreation Center in Midvale, a $10M first phase of the Southwest Athletic Complex in Herriman, and countywide maintenance. The county says there is no property tax increase because the bond replaces a 2016 bond being retired.",
-      "w": "The no-new-tax-because-we're-replacing-retiring-debt framing is the whole campaign, and it is the same rollover mechanic that carried the 2016 measure — but it forecloses using that capacity for anything else, including Olympic-adjacent venue needs. The geographic tilt toward the southwest quadrant reflects where the growth is."
+      "w": "The no-new-tax-because-we're-replacing-retiring-debt framing is the whole campaign, and it is the same rollover mechanic that carried the 2016 measure — but it forecloses using that capacity for anything else, including Olympic-adjacent venue needs. The geographic tilt toward the southwest quadrant reflects where the growth is.",
+      "url": "https://www.ksl.com/article/51608987/salt-lake-county-residents-will-vote-whether-to-approve-128m-recreation-bond-this-fall"
     }
   ]
 }

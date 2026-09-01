@@ -32,6 +32,10 @@ const { build } = require('./lib/edition');
 const { runGates } = require('./lib/gates');
 const prompt = require('./lib/prompt');   // prompt.PROMPT_VERSION resolves from manifest.yaml (A1-015)
 const { revalidate } = require('./revalidate');
+const { SourceTextStore, fetchInto } = require('./lib/source-text');
+const { runAnalysisGates } = require('./lib/analysis-stage');
+const { itemId } = require('./lib/canonical');
+const { allItems } = require('./lib/gates');
 
 const ROOT = __dirname;
 const EDITIONS = path.join(ROOT, 'editions');
@@ -97,6 +101,11 @@ async function main() {
     process.exit(3);
   }
 
+  // OPTION B (David, 2026-09-01). Ephemeral, in-memory, never written to
+  // disk and never part of the edition. Disposed before the process exits.
+  const sourceText = new SourceTextStore();
+  const urlToId = (u) => { try { return itemId(u); } catch (e) { return null; } };
+
   const deadline = startedAt.getTime() + RUN_BUDGET_MS;
   console.log('Open Wire generate -- ' + startedAt.toISOString() + (DRY ? ' [DRY RUN]' : ''));
   console.log('  model ' + cfg.model.id + ', prompt v' + prompt.PROMPT_VERSION + ', ' + cfg.clusters.length + ' clusters');
@@ -106,7 +115,7 @@ async function main() {
     ? clustersFromFixture(FIXTURE, cfg)
     : DRY
       ? []
-      : await Promise.all(cfg.clusters.map((c) => runCluster(c, cfg, { apiKey, now: startedAt, deadline })));
+      : await Promise.all(cfg.clusters.map((c) => runCluster(c, cfg, { apiKey, now: startedAt, deadline, sourceText, urlToId })));
   if (FIXTURE) console.log('  FIXTURE MODE -- no API call, no spend; assembly and gates exercised for real');
 
   // REQ-OPS-5: partial success is acceptable. A failed cluster does not fail
@@ -126,6 +135,22 @@ async function main() {
   const previous = readJson(path.join(EDITIONS, 'current.json'));
   const edition = build(results, cfg, startedAt);
 
+  // Option B: fill whatever the harvest did not supply. The pages are read
+  // ONCE per run, held in memory, and never written anywhere.
+  const harvested = results.reduce((n, r) => n + (r.harvested || 0), 0);
+  if (!SKIP_NET) {
+    const items = allItems(edition);
+    const q = [...items];
+    await Promise.all(Array.from({ length: Math.min(8, q.length) }, async () => {
+      for (;;) { const it = q.shift(); if (!it) return; await fetchInto(sourceText, it); }
+    }));
+  }
+  const analysis = runAnalysisGates(edition, cfg, sourceText);
+  console.log('  source text: ' + sourceText.size + '/' + allItems(edition).length +
+    ' items (' + harvested + ' from search results, rest fetched)');
+  console.log('  analysis gates [' + analysis.mode + ']: ' + analysis.linesFailing + ' line(s) failing, ' +
+    analysis.linesDropped + ' dropped');
+
   const { gatesPassed, checks } = await runGates(edition, cfg, {
     previous, costUsd: costUsd == null ? 0 : costUsd, now: startedAt, skipNetwork: SKIP_NET,
   });
@@ -141,10 +166,13 @@ async function main() {
     searches,
     clusters: results.map(({ id, status, searches, attempts, note }) => ({ id, status, items: 0, searches, attempts, ...(note ? { note } : {}) })),
     checks,
+    sourceText: sourceText.summary(),
+    analysis,
   };
   results.forEach((r, i) => { runReport.clusters[i].items = r.items.length; });
   edition.runReport = runReport;
 
+  sourceText.dispose();
   for (const c of checks) console.log('  ' + c.id.padEnd(12) + c.status.padEnd(9) + c.detail);
   writeReport(runReport);
 
