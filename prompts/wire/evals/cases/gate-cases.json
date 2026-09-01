@@ -1,34 +1,115 @@
 {
   "note": "Regression cases per gate -- WIRE-SPEC-A1 section 4, prompts/wire/evals/cases/. Each case is a line plus the item it belongs to and the verdict the gate must return. test/analysis.test.js runs these; a gate change that flips any verdict fails CI.",
   "cases": [
-    { "gate": "G-A1.1", "expect": "fail", "why": "lexicon phrase, lower case",
+    {
+      "gate": "G-A1.1",
+      "expect": "fail",
+      "why": "lexicon phrase, lower case",
       "w": "The ruling could have implications for how the agency writes its next rule and for the parties already litigating the prior version of it.",
-      "item": { "headline": "Court rules", "brief": "A court ruled against the agency.", "source": "AP" } },
-    { "gate": "G-A1.1", "expect": "fail", "why": "lexicon phrase, mixed case -- the match is case-insensitive",
+      "item": {
+        "headline": "Court rules",
+        "brief": "A court ruled against the agency.",
+        "source": "AP"
+      }
+    },
+    {
+      "gate": "G-A1.1",
+      "expect": "fail",
+      "why": "lexicon phrase, mixed case -- the match is case-insensitive",
       "w": "It REMAINS TO BE SEEN whether the agency appeals, and the timing of that choice determines which panel hears it next term.",
-      "item": { "headline": "Court rules", "brief": "A court ruled against the agency.", "source": "AP" } },
-    { "gate": "G-A1.1", "expect": "pass", "why": "names a mechanism, no filler",
+      "item": {
+        "headline": "Court rules",
+        "brief": "A court ruled against the agency.",
+        "source": "AP"
+      }
+    },
+    {
+      "gate": "G-A1.1",
+      "expect": "pass",
+      "why": "names a mechanism, no filler",
       "w": "The agency loses its Chevron cushion here, so the next rule has to survive on the statute's own text rather than on deference, which narrows what it can attempt without new legislation from Congress.",
-      "item": { "headline": "Court rules against agency on Chevron", "brief": "A court ruled against the agency, declining Chevron deference. Congress has not amended the statute.", "source": "AP" } },
-
-    { "gate": "G-A1.2", "expect": "fail", "why": "under the 30-word floor",
+      "item": {
+        "headline": "Court rules against agency on Chevron",
+        "brief": "A court ruled against the agency, declining Chevron deference. Congress has not amended the statute.",
+        "source": "AP"
+      }
+    },
+    {
+      "gate": "G-A1.2",
+      "expect": "fail",
+      "why": "under the 30-word floor",
       "w": "The tariff raises input costs for the domestic assemblers.",
-      "item": { "headline": "Tariff imposed", "brief": "A tariff was imposed on imported components.", "source": "Reuters" } },
-    { "gate": "G-A1.2", "expect": "fail", "why": "four sentences, over the three-sentence ceiling",
+      "item": {
+        "headline": "Tariff imposed",
+        "brief": "A tariff was imposed on imported components.",
+        "source": "Reuters"
+      }
+    },
+    {
+      "gate": "G-A1.2",
+      "expect": "fail",
+      "why": "four sentences, over the three-sentence ceiling",
       "w": "The tariff raises costs. It hits assemblers first. Suppliers follow within a quarter. The pass-through reaches consumers by the following year in most categories affected here.",
-      "item": { "headline": "Tariff imposed", "brief": "A tariff was imposed on imported components.", "source": "Reuters" } },
-    { "gate": "G-A1.2", "expect": "pass", "why": "abbreviations and decimals must not split a sentence",
+      "item": {
+        "headline": "Tariff imposed",
+        "brief": "A tariff was imposed on imported components.",
+        "source": "Reuters"
+      }
+    },
+    {
+      "gate": "G-A1.2",
+      "expect": "pass",
+      "why": "abbreviations and decimals must not split a sentence",
       "w": "The U.S. figure of 3.7% sits above the euro-area print and is the number that decides whether the committee treats the last two months as noise or as a trend it has to act against now.",
-      "item": { "headline": "US inflation at 3.7%", "brief": "US inflation came in at 3.7%, above the euro area.", "source": "Reuters" } },
-
-    { "gate": "G-A1.3", "expect": "fail", "why": "a figure absent from the brief -- the class this gate exists for",
+      "item": {
+        "headline": "US inflation at 3.7%",
+        "brief": "US inflation came in at 3.7%, above the euro area.",
+        "source": "Reuters"
+      }
+    },
+    {
+      "gate": "G-A1.3",
+      "expect": "fail",
+      "why": "a figure absent from the brief -- the class this gate exists for",
       "w": "The 9.9% revision is what changes the picture, because it moves the series far enough to alter the committee's own projection for the following quarter entirely.",
-      "item": { "headline": "Inflation revised", "brief": "The inflation figure was revised to 3.7%.", "source": "BLS" } },
-    { "gate": "G-A1.3", "expect": "pass", "why": "possessive of a verified noun",
+      "item": {
+        "headline": "Inflation revised",
+        "brief": "The inflation figure was revised to 3.7%.",
+        "source": "BLS"
+      }
+    },
+    {
+      "gate": "G-A1.3",
+      "expect": "pass",
+      "why": "possessive of a verified noun",
       "w": "Beijing's handling of the hydrological data is the live test of whether the arrangement survives contact with a real emergency downstream, and the answer arrives on a timescale of days rather than of negotiation rounds.",
-      "item": { "headline": "Beijing holds hydrological data", "brief": "Beijing has not shared real-time hydrological data with downstream states.", "source": "AP" } },
-    { "gate": "G-A1.3", "expect": "pass", "why": "reuses only figures already in the brief",
+      "item": {
+        "headline": "Beijing holds hydrological data",
+        "brief": "Beijing has not shared real-time hydrological data with downstream states.",
+        "source": "AP"
+      }
+    },
+    {
+      "gate": "G-A1.3",
+      "expect": "pass",
+      "why": "reuses only figures already in the brief",
       "w": "A 33% crude gain against sticky 3.7% inflation is the supply-side half of the problem that rate policy cannot reach, which is why the committee's own timeline depends on energy rather than on anything it controls.",
-      "item": { "headline": "Crude up 33%", "brief": "Crude rose 33% year on year while inflation held at 3.7%.", "source": "Reuters" } }
+      "item": {
+        "headline": "Crude up 33%",
+        "brief": "Crude rose 33% year on year while inflation held at 3.7%.",
+        "source": "Reuters"
+      }
+    },
+    {
+      "gate": "G-A1.3",
+      "expect": "pass",
+      "why": "a proper noun absent from the brief no longer gates -- narrowed to numerals, David 2026-09-01",
+      "w": "The Bundesbank precedent is the mechanism here, because a central bank that has done this before faces a different credibility test than one attempting it for the first time.",
+      "item": {
+        "headline": "Rates held",
+        "brief": "The rate is 3.7%.",
+        "source": "Reuters"
+      }
+    }
   ]
 }

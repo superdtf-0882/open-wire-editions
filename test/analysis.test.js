@@ -136,11 +136,29 @@ check('G-A1.3 flags a numeral absent from the brief', () => {
   const item = { headline: 'Rates held', brief: 'The rate is 3.7%.', source: 'Reuters' };
   assert.strictEqual(A.gA1_3('The 9.9% figure changes the picture entirely here.', item).status, 'fail');
 });
-check('G-A1.3 flags a proper noun absent from the brief -- and marks it HARD', () => {
+// NARROWED TO NUMERALS, David 2026-09-01. A proper noun absent from the
+// verified text is REPORTED and does NOT fail the gate. The accepted cost is
+// that a fabricated NAME passes; the observation is kept so run reports
+// accumulate evidence on whether that risk materialises.
+check('G-A1.3 does NOT fail on a proper noun -- it records an observation', () => {
   const item = { headline: 'Rates held', brief: 'The rate is 3.7%.', source: 'Reuters' };
   const r = A.gA1_3('This mirrors what Bundesbank did previously in similar conditions.', item);
+  assert.strictEqual(r.status, 'pass', 'proper nouns must not gate after the narrowing');
+  assert.deepStrictEqual(r.nounObservation, ['Bundesbank']);
+});
+check('G-A1.3 still HARD-fails on an unverified figure', () => {
+  const item = { headline: 'Rates held', brief: 'The rate is 3.7%.', source: 'Reuters' };
+  const r = A.gA1_3('The 9.9% revision is the number that changes the picture here.', item);
   assert.strictEqual(r.status, 'fail');
   assert.strictEqual(r.hard, true);
+});
+// Option B end to end: a figure the BRIEF omitted but the ARTICLE carries.
+check('source text verifies a figure the brief omitted', () => {
+  const item = { headline: 'Rates held', brief: 'The rate held.', source: 'Reuters' };
+  const line = 'The 3.7% print is the binding number here today.';
+  assert.strictEqual(A.gA1_3(line, item).status, 'fail', 'brief alone should not verify it');
+  assert.strictEqual(A.gA1_3(line, item, 'The report showed inflation at 3.7% for the month.').status, 'pass',
+    'source text should verify it');
 });
 check('G-A1.3 accepts a possessive form of a verified noun', () => {
   const item = { headline: 'Beijing holds data', brief: 'Beijing has not shared hydrological data.', source: 'AP' };
