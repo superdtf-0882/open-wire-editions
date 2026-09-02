@@ -25,25 +25,74 @@ const path = require('path');
 const { load } = require('../lib/config');
 
 // A pipeline is only delinquent for producing nothing if it was expected to
-// produce. `armedFrom` is that expectation, declared rather than inferred:
-// there is no reliable signal inside a workflow for "when did this become
-// live", and guessing one would be another control looking in the wrong place.
-function decide(cfg, now, edition) {
+// produce. That expectation is ANCHORED ON THE P-07 APPROVAL rather than on a
+// field kept for this control's benefit.
+//
+// WHY DERIVED AND NOT DECLARED. The first version read schedule.armedFrom and
+// returned `ok` when it was unset -- which DTOG measured as FAILING OPEN: the
+// hole it replaced returned `warn` and passed, and this returned `ok` and
+// passed, ONE NOTCH QUIETER THAN WHAT IT REPLACED. Deriving from
+// manifest.yaml's `approval.approvedOn` fixes that in three ways DTOG named:
+//
+//   1. The anchor is maintained by an obligation with an INDEPENDENT reason to
+//      be right. A field existing only to feed one control decays the moment
+//      that control is boring; approvedOn is P-07 evidence with a corpus
+//      record behind it.
+//   2. It converts fail-open to FAIL-CLOSED. No approval means not approved
+//      means generate.js exits 3 -- the pipeline CANNOT be armed. "No anchor"
+//      and "not armed" stop being two states this control conflates.
+//   3. It errs in the safe direction. Approval is the EARLIEST possible
+//      arming, so the anchor can only be too early and the control can only
+//      fire sooner, never later. For a control whose subject is silence, early
+//      is the correct direction to be wrong in.
+//
+// BEHAVIOUR CHANGE, landed knowingly rather than discovered on a Monday:
+// APPROVAL DOES NOT IMPLY ARMED. If the prompt is approved and the secret is
+// not wired for a week, this raises. DTOG's read, adopted: that is the control
+// WORKING -- an approved pipeline producing nothing is exactly what REQ-OPS-3
+// exists to surface, and whether the gap is a secret or a schedule is the
+// operator's to discover.
+//
+// schedule.armedFrom is still honoured as an OVERRIDE when set, for a pipeline
+// armed later than its approval; it can only move the anchor forward.
+function armedAnchor(cfg, manifest) {
+  const approved = manifest && manifest.approval && manifest.approval.approvedOn;
+  const declared = cfg.schedule.armedFrom;
+  const dates = [approved, declared]
+    .map((d) => (d ? new Date(d) : null))
+    .filter((d) => d && !Number.isNaN(d.getTime()));
+  if (!dates.length) return { at: null, source: 'none' };
+  // The LATER of the two: a declared override can delay arming past approval,
+  // never precede it.
+  const at = dates.reduce((a, b) => (a > b ? a : b));
+  return {
+    at,
+    source: dates.length === 2 ? 'approval+override' : (approved ? 'P-07 approval' : 'declared override'),
+  };
+}
+
+function decide(cfg, now, edition, manifest) {
   const slots = (cfg.schedule.slots || []).length || 2;
   const missed = cfg.schedule.missedSlotsBeforeError === undefined ? 4 : Number(cfg.schedule.missedSlotsBeforeError);
   const staleHours = missed * (24 / slots);
   const graceHours = cfg.schedule.armedGraceHours === undefined ? 24 : Number(cfg.schedule.armedGraceHours);
 
-  const armedFrom = cfg.schedule.armedFrom ? new Date(cfg.schedule.armedFrom) : null;
-  const armed = armedFrom && !Number.isNaN(armedFrom.getTime()) && armedFrom <= now;
+  const anchor = armedAnchor(cfg, manifest);
+  const armedFrom = anchor.at;
 
-  if (!armed) {
-    return {
-      status: 'ok',
-      detail: armedFrom
-        ? 'not armed until ' + cfg.schedule.armedFrom + ' -- no edition expected yet'
-        : 'schedule.armedFrom is not set, so no edition is expected; set it when the pipeline goes live',
-    };
+  // NO ANCHOR IS NOT "HEALTHY". Without a P-07 approval the pipeline cannot
+  // run at all -- generate.js exits 3 -- so this state means the control has
+  // nothing to measure against, which is a fact about the CONTROL and is
+  // reported as such rather than as a clean bill. The old version returned
+  // `ok` here and that was the fail-open DTOG found.
+  if (!armedFrom) {
+    return { status: 'warn', detail: 'NO ARMING ANCHOR: manifest.yaml carries no approval.approvedOn ' +
+      'and schedule.armedFrom is unset. Publication cannot be assessed, and generate.js would refuse ' +
+      'anyway for want of the same approval.' };
+  }
+  if (armedFrom > now) {
+    return { status: 'ok', detail: 'not armed until ' + armedFrom.toISOString() +
+      ' (' + anchor.source + ') -- no edition expected yet' };
   }
 
   const armedHours = (now - armedFrom) / 3600e3;
@@ -55,6 +104,19 @@ function decide(cfg, now, edition) {
     if (armedHours <= graceHours) {
       return { status: 'warn', detail: 'armed ' + armedHours.toFixed(1) + 'h ago and no edition yet; ' +
         'inside the ' + graceHours + 'h grace for a first slot' };
+    }
+    // DT2 49- section 4: a KNOWN red owes the date it stops being known.
+    // Alarm fatigue is defeated by giving the alarm a terminal condition, not
+    // by trusting a practice to keep looking. Past knownRedSlots the message
+    // changes from 'waiting for the first run' to 'the pipeline does not
+    // produce', which is a defect investigation rather than a status.
+    const knownRedSlots = cfg.schedule.knownRedSlots === undefined ? 2 : Number(cfg.schedule.knownRedSlots);
+    const slotsElapsed = Math.floor(armedHours / (24 / slots));
+    if (slotsElapsed > knownRedSlots + (graceHours / (24 / slots))) {
+      return { status: 'error', expired: true, detail: 'ARMED ' + armedHours.toFixed(1) + 'h AGO, ' +
+        slotsElapsed + ' SCHEDULED SLOTS ELAPSED, AND NO EDITION HAS EVER BEEN PUBLISHED. This is past ' +
+        'the known-red window of ' + knownRedSlots + ' slots beyond grace: it is NO LONGER "waiting for ' +
+        'the first run" and IS "the pipeline does not produce". Treat as a defect investigation.' };
     }
     return { status: 'error', detail: 'ARMED ' + armedHours.toFixed(1) + 'h AGO AND NO EDITION HAS EVER BEEN ' +
       'PUBLISHED -- past the ' + graceHours + 'h grace. The pipeline is live and producing nothing.' };
@@ -80,11 +142,15 @@ function readEdition() {
   }
 }
 
-module.exports = { decide };
+function readManifest() {
+  try { return require('../lib/prompts').manifest(); } catch (e) { return null; }
+}
+
+module.exports = { decide, armedAnchor, readManifest };
 
 if (require.main === module) {
   const cfg = load();
-  const r = decide(cfg, new Date(), readEdition());
+  const r = decide(cfg, new Date(), readEdition(), readManifest());
   const line = 'heartbeat: ' + r.status.toUpperCase() + ' -- ' + r.detail;
   if (r.status === 'error') { console.log('::error::' + r.detail); console.error(line); process.exit(1); }
   if (r.status === 'warn') { console.log('::warning::' + r.detail); }
@@ -101,7 +167,11 @@ if (require.main === module) {
 //   - It cannot detect its OWN failure to run. A disabled or broken heartbeat
 //     is silent in exactly the way it exists to prevent, and nothing here
 //     closes that -- it needs a watcher outside this repository.
-//   - `armedFrom` is DECLARED, not observed. If the pipeline is disarmed and
-//     the field is not updated, this reports a failure that is a policy
-//     change; if it is armed and the field is not set, this reports OK
-//     forever, which is the old hole in a new place.
+//   - The anchor is the P-07 APPROVAL, so APPROVAL DOES NOT IMPLY ARMED: an
+//     approved pipeline whose secret is not wired raises here, which is the
+//     control working rather than a false positive, but it does mean this
+//     cannot distinguish 'not wired' from 'wired and broken'.
+//   - schedule.armedFrom can still DELAY the anchor. A stale override reports
+//     healthy for as long as it points at the future -- a smaller hole than
+//     the unset-field one it replaced, but the same shape, and the only
+//     remaining place a maintained value can lie to this control.

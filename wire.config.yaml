@@ -46,7 +46,22 @@ schedule:
   # DISARMED -- an unset field reports healthy forever, which is the old hole
   # in a new place, and tools/heartbeat-check.js says so at its foot.
   # Armed 2026-09-01: prompt approved under P-07, ANTHROPIC_API_KEY placed.
-  armedFrom: "2026-09-01T00:00:00Z"
+  # NOW AN OVERRIDE, NOT THE ANCHOR. The anchor is derived from
+  # prompts/wire/manifest.yaml approval.approvedOn -- P-07 evidence that is
+  # maintained for its own reasons and cannot be forgotten, because without
+  # it generate.js refuses to run at all. DTOG measured the previous declared
+  # field as FAILING OPEN: unset returned ok, one notch quieter than the hole
+  # it replaced. This field now only DELAYS arming past approval, for a
+  # pipeline approved before it was wired. Left unset here: approval and
+  # arming were the same day.
+  # armedFrom: ""
+
+  # DT2 49- section 4: the date a KNOWN red stops being known. Past this many
+  # slots beyond grace with no edition, the message changes from waiting-for-
+  # the-first-run to the-pipeline-does-not-produce. Alarm fatigue is defeated
+  # by giving the alarm a terminal condition, not by trusting anyone to keep
+  # looking at a red that never changes.
+  knownRedSlots: 2
 
   # Grace after arming before "no edition at all" becomes an error. Long
   # enough to cover the wait for a first slot plus its window: worst case is
