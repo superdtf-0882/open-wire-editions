@@ -37,7 +37,7 @@
     {
       "gate": "G-A1.2",
       "expect": "fail",
-      "why": "under the 30-word floor",
+      "why": "under the 24-word floor (A1-005, floor set by David 2026-09-01)",
       "w": "The tariff raises input costs for the domestic assemblers.",
       "item": {
         "headline": "Tariff imposed",

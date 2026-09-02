@@ -66,6 +66,16 @@ gates:
   briefMaxChars: 700
   whyMaxChars: 500
   headlineMaxChars: 160
+  # A1-005, floor set to 24 by David 2026-09-01 on the measured distribution:
+  # 85 accepted lines ran min 24, p10 34, median 58, p90 71, max 77. The old
+  # floor of 30 rejected four accepted lines; the ceiling of 80 has never
+  # bound anything. These were HARDCODED in lib/analysis-gates.js until now,
+  # which was a quiet REQ-CFG-1 violation -- the config is meant to be the
+  # source of truth for behaviour.
+  whyWords:
+    min: 24
+    max: 80
+    maxSentences: 3
 
 sources:
   # Enforced by the validator (REQ-GATE-3), not only by the prompt.

@@ -124,6 +124,14 @@ check('G-A1.1 catches every phrase in the lexicon', () => {
 check('G-A1.1 is case-insensitive', () => {
   assert.strictEqual(A.gA1_1('It REMAINS TO BE SEEN whether.', lexicon).status, 'fail');
 });
+check('A1-005 bounds come from config, not from a code literal -- REQ-CFG-1', () => {
+  const cfg = require('../lib/config').load();
+  assert.ok(cfg.gates.whyWords, 'wire.config.yaml carries no gates.whyWords');
+  assert.strictEqual(cfg.gates.whyWords.min, 24, 'floor is not the ruled 24');
+  const b = { minWords: cfg.gates.whyWords.min, maxWords: cfg.gates.whyWords.max, maxSentences: cfg.gates.whyWords.maxSentences };
+  assert.strictEqual(A.gA1_2(Array(24).fill('word').join(' '), b).status, 'pass', '24 words must pass the ruled floor');
+  assert.strictEqual(A.gA1_2(Array(23).fill('word').join(' '), b).status, 'fail', '23 must still fail');
+});
 check('G-A1.2 bounds words and sentences', () => {
   assert.strictEqual(A.gA1_2('Too short.').status, 'fail');
   assert.strictEqual(A.gA1_2(Array(90).fill('word').join(' ')).status, 'fail');

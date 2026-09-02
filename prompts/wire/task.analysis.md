@@ -26,8 +26,12 @@ field other than `id` and `w` **fails the stage.**
 
 ## What each `w` must be
 
-**One to three sentences. 30 to 80 words.** Counted; outside the bounds is a
+**One to three sentences. 24 to 80 words.** Counted; outside the bounds is a
 failure.
+
+*(Floor set to 24 by David, 2026-09-01, from the measured distribution of
+accepted lines: min 24, median 58, max 77. The previous floor of 30 rejected
+four lines a human had accepted.)*
 
 **It must name at least one of:**
 
