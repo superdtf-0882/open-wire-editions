@@ -17,7 +17,12 @@
 // than WRONG, which is the same posture AC-011 requires of the fetch itself.
 // Its result is reported, and the edition stands either way.
 
-const DEFAULT_ENDPOINT = 'https://davidfacer.com/api/revalidate-wire';
+// TRAILING SLASH IS DELIBERATE. The site sets trailingSlash: true, so the
+// non-slash form answers 308 to this one. A POST does survive that redirect
+// with method and body intact -- verified live 2026-09-01 -- but the hop is
+// avoidable and a redirect in a credentialed call is a fragility, not a
+// feature.
+const DEFAULT_ENDPOINT = 'https://davidfacer.com/api/revalidate-wire/';
 const TIMEOUT_MS = 10000;
 
 async function revalidate(editionId, { fetchImpl = globalThis.fetch, endpoint, secret } = {}) {
