@@ -11,6 +11,22 @@
 
 manifestVersion: "1.0.0"
 
+# P-07 APPROVAL. "Any AI prompt used in a production route shall be stored as
+# a named versioned constant and APPROVED BY DAVID before promotion to
+# Production." Given 2026-09-01, to CC directly, per RULE-5:
+#   "I approve the Open Wire prompts. Update the spec. Once it is in
+#    production, we will make changes with future adjustment.
+#    David Facer 9/1/2026"
+# Recorded as PROMPT-WIRE-V1 in corpus/register_prompts.md. The approval
+# attaches to THESE FILES AT THIS VERSION -- a prompt edit bumps the stage
+# version and, under P-07, needs its own approval before Production.
+approval:
+  authority: "P-07"
+  approvedBy: "David Facer"
+  approvedOn: "2026-09-01"
+  scope: "combined stage v1.0.0; analyst-profile.md, task.combined.md, run-context.combined.md"
+  corpusRecord: "PROMPT-WIRE-V1"
+
 # Model tiering per AD A1.6: small model for extraction and the judge, frontier
 # model for analysis only. Analysis is where output quality is subjective and
 # where the budget should concentrate; extraction is schema-filling with a
