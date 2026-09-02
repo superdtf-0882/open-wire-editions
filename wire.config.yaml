@@ -21,6 +21,19 @@ site:
 schedule:
   timezone: America/Denver
   slots: ["06:00", "16:00"]
+  # HOW LONG AFTER A SLOT A MISSED FIRING MAY STILL PUBLISH IT.
+  # The cron is hourly and GitHub schedules are best-effort: measured
+  # 2026-09-01/02 this repo saw FOUR firings in nine hours and NOTHING in the
+  # 22:00Z hour, which is the 16:00 slot. An exact-hour match turns that delay
+  # into a SKIPPED EDITION. Inside this window a later firing still publishes,
+  # and the slot-already-covered check stops it publishing twice.
+  #
+  # THIS NUMBER IS ALSO A COST CEILING. The cron is hourly, so the window
+  # length is the maximum number of ATTEMPTS for one slot -- a run that fails
+  # its gates commits nothing and the next hour retries it. Worst case per
+  # slot is windowHours x budget.maxCostUsdPerRun, which at 3 and $6.00 is
+  # $18. Widening this widens that ceiling.
+  windowHours: 3
   # REQ-OPS-1 — if the runner is UTC-only, fire hourly and no-op unless the
   # local hour matches a slot. Do not hard-code a UTC cron.
   strategy: hourly-noop

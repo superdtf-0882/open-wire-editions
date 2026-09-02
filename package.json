@@ -10,7 +10,7 @@
   "scripts": {
     "generate": "node generate.js",
     "dry-run": "node generate.js --dry-run --skip-network",
-    "test": "node test/gates.test.js && node test/edition.test.js && node test/analysis.test.js && node test/source-text.test.js",
+    "test": "node test/gates.test.js && node test/edition.test.js && node test/analysis.test.js && node test/source-text.test.js && node test/slot-check.test.js",
     "test:network": "node test/gates.test.js --network",
     "fixture-run": "node generate.js --fixture test/fixtures/golden-current.json --skip-network",
     "eval": "node test/analysis.test.js"
