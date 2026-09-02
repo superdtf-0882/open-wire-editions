@@ -70,6 +70,10 @@ jobs:
       - name: Generate
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Required by an IDENTITY-LINKED key; harmless and unset for a
+          # workspace-scoped one. A workspace id identifies rather than
+          # authenticates, so it is a repository VARIABLE, not a secret.
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
           OPEN_WIRE_REVALIDATE_SECRET: ${{ secrets.OPEN_WIRE_REVALIDATE_SECRET }}
           OPEN_WIRE_PROMPT_APPROVED: ${{ vars.OPEN_WIRE_PROMPT_APPROVED }}
         run: node generate.js ${{ inputs.dry_run && '--dry-run' || '' }}
