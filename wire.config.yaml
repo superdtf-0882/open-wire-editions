@@ -34,6 +34,29 @@ schedule:
   # slot is windowHours x budget.maxCostUsdPerRun, which at 3 and $6.00 is
   # $18. Widening this widens that ceiling.
   windowHours: 3
+
+  # WHEN EDITIONS BECAME EXPECTED. REQ-OPS-3 liveness turns on this: before
+  # it, producing nothing is correct; after it, producing nothing is a
+  # FAILURE rather than a note. The previous heartbeat had no such field and
+  # so treated a pipeline that had never published as healthy forever -- the
+  # state actually in force on 2026-09-01/02.
+  # DECLARED, NOT OBSERVED: there is no reliable in-workflow signal for
+  # "when did this go live", and inferring one would be another control
+  # looking in the wrong place. UPDATE IT WHEN THE PIPELINE IS ARMED OR
+  # DISARMED -- an unset field reports healthy forever, which is the old hole
+  # in a new place, and tools/heartbeat-check.js says so at its foot.
+  # Armed 2026-09-01: prompt approved under P-07, ANTHROPIC_API_KEY placed.
+  armedFrom: "2026-09-01T00:00:00Z"
+
+  # Grace after arming before "no edition at all" becomes an error. Long
+  # enough to cover the wait for a first slot plus its window: worst case is
+  # arming just after 06:00, next slot 16:00, plus 3h = 13h.
+  armedGraceHours: 24
+
+  # Staleness threshold, expressed in MISSED SLOTS rather than hours so it
+  # tracks the schedule: 4 slots x (24h / 2 slots per day) = 48h. Change the
+  # slot count and this follows.
+  missedSlotsBeforeError: 4
   # REQ-OPS-1 — if the runner is UTC-only, fire hourly and no-op unless the
   # local hour matches a slot. Do not hard-code a UTC cron.
   strategy: hourly-noop

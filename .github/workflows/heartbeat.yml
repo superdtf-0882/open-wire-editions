@@ -1,25 +1,27 @@
 name: Heartbeat
 
-# REQ-OPS-3, and WP-WIRE-01 activity 4's own framing of why it is still owed:
-# GitHub disables scheduled workflows after 60 DAYS OF REPOSITORY INACTIVITY.
-# A content repository receiving twice-daily commits is not inactive, so the
-# auto-disable should never fire -- BUT THE FAILURE IS SILENT. If generation
-# stops for any other reason, the repository goes quiet, and sixty days later
-# the schedule is disabled too, so the thing that would have recovered on its
-# own is now switched off as well.
+# REQ-OPS-3. Two separate jobs of work, and the second is the one that matters:
+#   1. commit a heartbeat file, which keeps the repository active and so keeps
+#      GitHub from auto-disabling the schedule after 60 days of inactivity;
+#   2. CHECK THAT PUBLICATION IS ACTUALLY HAPPENING, and fail loudly if not.
 #
-# This job therefore does two separate things, and the second is the one that
-# matters:
-#   1. commits a heartbeat file, which keeps the repository active;
-#   2. CHECKS THAT THE GENERATE SCHEDULE IS STILL ARMED, and FAILS LOUDLY if
-#      it is not, or if no edition has landed in 48 hours.
+# A heartbeat that only did the first would MASK the failure it exists to
+# surface: the repository would look healthy while publishing nothing.
 #
-# A heartbeat that only keeps the repo alive would mask exactly the failure it
-# is supposed to surface: the repo would look healthy while publishing nothing.
+# DAILY, NOT WEEKLY. The previous version ran Mondays. Against a twice-daily
+# digest that is up to 14 missed editions before anything is raised -- and it
+# meant the workflow had never run at all, having been created on a Tuesday.
+#
+# THE FRESHNESS CHECK NOW LIVES IN tools/heartbeat-check.js, NOT IN THIS FILE.
+# The previous version was four lines of inline shell whose first branch read
+# "no edition file? warning, exit 0", so a pipeline that had NEVER published
+# looked healthy forever -- which was the live state on 2026-09-01/02. The hole
+# was in a branch nothing could test. Moving it to a script IS the fix; the
+# changed verdict is a consequence of being able to test it.
 
 on:
   schedule:
-    - cron: '17 12 * * 1'
+    - cron: '17 12 * * *'
   workflow_dispatch:
 
 permissions:
@@ -31,6 +33,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci --omit=dev
 
       - name: Keep the repository active
         run: |
@@ -41,7 +47,10 @@ jobs:
           git add .github/HEARTBEAT
           git diff --staged --quiet || { git commit -m "Heartbeat"; git push; }
 
+      # Runs even if the commit step failed: a repository that cannot be
+      # written to is exactly when you want to know whether it is publishing.
       - name: Confirm the generate schedule is still armed
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -52,18 +61,9 @@ jobs:
             exit 1
           fi
 
-      # An armed schedule that produces nothing is the failure a liveness check
-      # exists to catch. Two slots a day means 48h without an edition is four
-      # consecutive misses, not a delayed run.
-      - name: Confirm an edition landed recently
-        run: |
-          if [ ! -f editions/current.json ]; then
-            echo "::warning::no edition has been published yet"; exit 0
-          fi
-          gen=$(node -p "require('./editions/current.json').generatedAt")
-          age=$(( ( $(date -u +%s) - $(date -u -d "$gen" +%s) ) / 3600 ))
-          echo "latest edition $gen -- ${age}h old"
-          if [ "$age" -gt 48 ]; then
-            echo "::error::latest edition is ${age}h old; four or more scheduled slots have produced nothing."
-            exit 1
-          fi
+      # The check the old version could not make. Exits non-zero on ERROR --
+      # armed and never published, or an edition past the missed-slot
+      # threshold. See tools/heartbeat-check.js for what it still cannot see.
+      - name: Confirm publication is actually happening
+        if: always()
+        run: node tools/heartbeat-check.js
