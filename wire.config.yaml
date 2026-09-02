@@ -75,7 +75,7 @@ windows:
   scheduledMacroReleases: 5d
 
 model:
-  id: claude-sonnet-5
+  id: claude-opus-5
   temperature: 0.2
   maxTokensPerCluster: 8000
   tools: [web_search]

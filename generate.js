@@ -27,7 +27,7 @@
 const fs = require('fs');
 const path = require('path');
 const { load } = require('./lib/config');
-const { runCluster, estimateCost } = require('./lib/anthropic');
+const { runCluster, estimateCost, preflightCost } = require('./lib/anthropic');
 const { build } = require('./lib/edition');
 const { runGates } = require('./lib/gates');
 const prompt = require('./lib/prompt');   // prompt.PROMPT_VERSION resolves from manifest.yaml (A1-015)
@@ -105,6 +105,15 @@ async function main() {
   // disk and never part of the edition. Disposed before the process exits.
   const sourceText = new SourceTextStore();
   const urlToId = (u) => { try { return itemId(u); } catch (e) { return null; } };
+
+  // Ask REQ-GATE-9's question BEFORE spending. Exit 4 refuses; the gate
+  // itself still measures the real cost afterwards.
+  const pf = preflightCost(cfg);
+  console.log('  cost pre-flight: ' + pf.detail);
+  if (!pf.ok && !DRY && !FIXTURE) {
+    console.error('REFUSED before any API call: ' + pf.detail);
+    process.exit(4);
+  }
 
   const deadline = startedAt.getTime() + RUN_BUDGET_MS;
   console.log('Open Wire generate -- ' + startedAt.toISOString() + (DRY ? ' [DRY RUN]' : ''));

@@ -43,7 +43,7 @@ stages:
     status: active
     prompt: task.combined.md
     profile: analyst-profile.md
-    model: claude-sonnet-5
+    model: claude-opus-5
     version: "1.0.0"
     note: >
       Legacy single-call generation: extraction and analysis in one request.
